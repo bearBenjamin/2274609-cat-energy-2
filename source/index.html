@@ -38,17 +38,17 @@
               <a class="main-nav__list-link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__list-item">
-              <a class="main-nav__item-link" href="#">Подбор программы</a>
+              <a class="button main-nav__item-link" href="#">Подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
     <article class="hero">
-      <h1 class="hero__title">Функциональное питание для котов</h1>
+      <h1 class="title hero__title">Функциональное питание для котов</h1>
       <p class="hero__slogan">Занялся собой? Займись котом!</p>
       <img class="hero__image" src="#" width="280" height="270" alt="Стакан кошачьих вкусняшек">
-      <a class="hero__link-programs" href="#">Подобрать программу</a>
+      <a class="button hero__link-programs" href="#">Подобрать программу</a>
     </article>
   </header>
   <main class="main-container">
@@ -63,7 +63,11 @@
             </div>
             <h3 class="cat-programs__title">Похудение</h3>
             <p class="cat-programs__content">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="cat-programs__link" href="#">Каталог slim</a>
+            <a class="cat-programs__link" href="#">
+              <span class="cat-programs__link-text">Каталог slim</span>
+              <span class="visually-hidden">Стрелка</span>
+              <svg class="cat-programs__link-arrow" width="32" height="10"></svg>
+            </a>
           </li>
           <li class="cat-programs__list-item">
             <div class="cat-programs__image-container">
@@ -72,14 +76,18 @@
             </div>
             <h3 class="cat-programs__title">Набор массы</h3>
             <p class="cat-programs__content">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="cat-programs__link" href="#">Каталог pro</a>
+            <a class="cat-programs__link" href="#">
+              <span class="cat-programs__link-text">Каталог pro</span>
+              <span class="visually-hidden">Стрела</span>
+              <svg class="cat-programs__link-arrow" width="32" height="10"></svg>
+            </a>
           </li>
         </ul>
       </div>
     </section>
     <section class="description-cat-programs">
       <div class="description-cat-programs__wrapper">
-        <h2 class="title description-cat-programs__title">Как это работает</h2>
+        <h2 class="title-secondary description-cat-programs__title">Как это работает</h2>
         <ul class="description-cat-programs__list">
           <li class="description-cat-programs__list-item">
             <div class="description-cat-programs__container-image"></div>
@@ -113,7 +121,7 @@
       <div class="role-model__wrapper">
         <div class="role-model__inner role-model-inner">
           <div class="role-model-inner__content role-model-inner-content">
-            <h2 class="title role-model-inner-content__title">Живой пример</h2>
+            <h2 class="title-secondary role-model-inner-content__title">Живой пример</h2>
             <p class="description role-model-inner-content__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           </div>
           <div class="role-model-inner__date role-model-inner-date">
@@ -159,7 +167,7 @@
     <div class="page-footer__container">
       <ul class="page-footer__list">
         <li class="page-footer__list-item">
-          <a class="page-footer__logo page-footer-logo" href="#">
+          <a class="page-footer__logo page-footer-logo" href="index.html">
             <img class="page-footer-logo__text" src="#" width="128" height="24" alt="Название компании">
           </a>
         </li>
