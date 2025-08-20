@@ -14,8 +14,12 @@
     <div class="main-header__container">
       <nav class="main-nav">
         <a class="main-nav__logo" href="#">
-          <img class="main-nav__logo-image" src="#" width="33" height="38" alt="Логотип компании">
-          <img class="main-nav__logo-text" src="#" width="101" height="18" alt="Название компании Cat Energy">
+          <picture>
+            <img class="main-nav__logo-image" src="images/logo-picture-mobile.svg" width="33" height="38" alt="Логотип компании">
+          </picture>
+          <picture>
+            <img class="main-nav__logo-text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Название компании Cat Energy">
+          </picture>
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__list-item main-nav__list-item--current">
@@ -36,7 +40,11 @@
     <article class="hero">
       <h1 class="title hero__title">Функциональное питание для котов</h1>
       <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <img class="hero__image" src="#" width="280" height="270" alt="Стакан кошачьих вкусняшек">
+      <picture>
+        <source width="552" height="499" type="image/jpg" media="(min-width: 1440px)" srcset="images/index/hero-dekstop-cat-food@1x.png 1x, images/index/hero-dekstop-cat-food@2x.png 2x">
+        <source width="709" height="609" type="image/jpg" media="(min-width: 768px)" srcset="images/index/hero-tablet-cat-food@1x.jpg 1x, images/index/hero-tablet-cat-food@2x.jpg 2x">
+        <img class="hero__image" src="images/index/hero-mobile-cat-food@1x.png" srcset="images/index/hero-mobile-cat-food@2x.png" width="280" height="270" alt="Стакан кошачьих вкусняшек">
+      </picture>
       <a class="button hero__link-programs" href="form-programs.html">Подобрать программу</a>
     </article>
   </header>
@@ -116,10 +124,16 @@
         </div>
         <div class="role-model__slider-container slider-container">
           <div class="slider-container__inner">
-            <img class="slider-container__image slider-container__image--after" src="#" width="280" height="256" alt="Кот после программы">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-tablet-after@1x.png 1x, images/slider/slider-tablet-after@2x.png 2x">
+              <img class="slider-container__image slider-container__image--after" src="images/slider/slider-mobile-after@1x.png" srcset="images/slider/slider-mobile-after@2x.png" width="280" height="256" alt="Кот после программы">
+            </picture>
           </div>
           <div class="slider-container__inner">
-            <img class="slider-container__image slider-container__image--before" src="#" width="280" height="256" alt="Кот до программы">
+            <picture>
+              <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/slider-tablet-before@1x.png 1x, images/slider/slider-tablet-before@2x.png 2x">
+              <img class="slider-container__image slider-container__image--before" src="images/slider/slider-mobile-before@1x.png" srcset="images/slider/slider-mobile-before@2x.png" width="280" height="256" alt="Кот до программы">
+            </picture>
           </div>
           <div class="slider-container__toggle"></div>
         </div>
@@ -136,7 +150,11 @@
         </address>
       </div>
       <div class="contact__map-container">
-        <img class="contact__map-image" src="#" width="320" height="362" alt="Cat Energy на карте города">
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-dekstop@1x.png 1x, images/map-dekstop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="contact__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Cat Energy на карте города">
+        </picture>
       </div>
     </section>
   </main>
