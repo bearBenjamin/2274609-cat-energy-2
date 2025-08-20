@@ -330,7 +330,11 @@
         </address>
       </div>
       <div class="contact__map-container">
-        <img class="contact__map-image" src="#" width="320" height="362" alt="Cat Energy на карте города">
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-dekstop@1x.png 1x, images/map-dekstop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="contact__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Cat Energy на карте города">
+        </picture>
       </div>
     </section>
   </main>
