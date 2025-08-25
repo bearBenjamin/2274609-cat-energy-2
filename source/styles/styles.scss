@@ -1,7 +1,41 @@
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
+@import "./common/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/page.scss";
+@import "./blocks/title.scss";
+@import "./blocks/title-secondary.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/button-toggle.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/cat-programs.scss";
+@import "./blocks/description-cat-programs.scss";
+@import "./blocks/role-model.scss";
+@import "./blocks/role-model-inner.scss";
+@import "./blocks/role-model-inner-content.scss";
+@import "./blocks/role-model-inner-date.scss";
+@import "./blocks/role-model-inner-date-container.scss";
+@import "./blocks/slider-container.scss";
+@import "./blocks/contact.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/footer-social-list-item.scss";
+@import "./blocks/developer-contact.scss";
+
+/* catalog.html */
+@import "./blocks/page-main.scss";
+@import "./blocks/catalog-product.scss";
+@import "./blocks/catalog-product-card.scss";
+@import "./blocks/card-description-item.scss";
+@import "./blocks/additional-product.scss";
+@import "./blocks/additional-product-card.scss";
+@import "./blocks/additional-card-description-item.scss";
+@import "./blocks/subscribe.scss";
+@import "./blocks/subscribe-form.scss";
+@import "./blocks/contact-catalog.scss";

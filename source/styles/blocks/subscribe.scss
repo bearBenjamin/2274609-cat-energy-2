@@ -1,0 +1,18 @@
+.subscribe {
+  background-color: $basic-white;
+  color: $basic-black;
+}
+
+.subscribe__title {
+  text-align: left;
+}
+
+.subscribe__content {
+  margin: 0;
+  font-family: $second-family;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+//.subscribe__form {}

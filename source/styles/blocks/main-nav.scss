@@ -1,0 +1,24 @@
+.main-nav {
+  font-family: $second-family;
+  font-size: 20px;
+  line-height: 1;
+}
+
+// .main-nav__logo {}
+
+// .main-nav__logo-image {}
+
+// .main-nav__logo-text {}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// .main-nav__list-item {}
+
+.main-nav__list-link {
+  color: $basic-black;
+  text-transform: uppercase;
+}
