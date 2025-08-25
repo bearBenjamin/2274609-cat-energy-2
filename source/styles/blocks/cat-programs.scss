@@ -1,0 +1,39 @@
+.cat-programs {
+  background-color: $basic-white;
+  color: $basic-black;
+}
+
+//.cat-programs__wrapper {}
+
+.cat-programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cat-programs__list-item {
+  background-color: $basic-grey;
+}
+
+.cat-programs__title {
+  line-height: 154%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.cat-programs__content {
+  margin: 0;
+  font-size: 14px;
+  line-height: 129%;
+  color: $special-dark-grey;
+}
+
+.cat-programs__link {
+  font-family: $second-family;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basic-black;
+}

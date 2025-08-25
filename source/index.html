@@ -14,9 +14,10 @@
 </head>
 
 <body class="page__body">
+
   <header class="main-header">
     <div class="main-header__container">
-      <nav class="main-nav">
+      <nav class="main-header__nav main-nav">
         <a class="main-nav__logo" href="#">
           <img class="main-nav__logo-image" src="#" width="33" height="38" alt="Логотип компании">
           <img class="main-nav__logo-text" src="#" width="101" height="18" alt="Название компании Cat Energy">
@@ -33,13 +34,15 @@
           </li>
         </ul>
       </nav>
-      <button class="button-toggle button-toggle--current button-toggle--open" type="button">
+      <button class="main-header__button button-toggle button-toggle--current button-toggle--open" type="button">
         <span class="button-toggle__menu-navigation visually-hidden">Открыть меню</span>
       </button>
     </div>
     <article class="hero">
-      <h1 class="title hero__title">Функциональное питание для котов</h1>
-      <p class="hero__slogan">Занялся собой? Займись котом!</p>
+      <div class="hero__inner">
+        <h1 class="title hero__title">Функциональное питание для котов</h1>
+        <p class="hero__slogan">Занялся собой? Займись котом!</p>
+      </div>
       <picture>
         <source width="552" height="499" type="image/jpg" media="(min-width: 1440px)" srcset="images/index/hero-dekstop-cat-food@1x.png 1x, images/index/hero-dekstop-cat-food@2x.png 2x">
         <source width="709" height="609" type="image/jpg" media="(min-width: 768px)" srcset="images/index/hero-tablet-cat-food@1x.jpg 1x, images/index/hero-tablet-cat-food@2x.jpg 2x">
@@ -48,24 +51,21 @@
       <a class="button hero__link-programs" href="form-programs.html">Подобрать программу</a>
     </article>
   </header>
+
   <main class="main-container">
     <section class="cat-programs">
       <div class="cat-programs__wrapper">
         <h2 class="visually-hidden">Программы тренировок</h2>
         <ul class="cat-programs__list">
           <li class="cat-programs__list-item">
-            <h3 class="cat-programs__title">Похудение</h3>
+            <h3 class="title-secondary cat-programs__title">Похудение</h3>
             <p class="cat-programs__content">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="cat-programs__link" href="form-programs.html">
-              <span class="cat-programs__link-text">Каталог slim</span>
-            </a>
+            <a class="cat-programs__link" href="form-programs.html">Каталог slim</a>
           </li>
           <li class="cat-programs__list-item">
-            <h3 class="cat-programs__title">Набор массы</h3>
+            <h3 class="title-secondary cat-programs__title">Набор массы</h3>
             <p class="cat-programs__content">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="cat-programs__link" href="form-programs.html">
-              <span class="cat-programs__link-text">Каталог pro</span>
-            </a>
+            <a class="cat-programs__link" href="form-programs.html">Каталог pro</a>
           </li>
         </ul>
       </div>
@@ -73,7 +73,7 @@
 
     <section class="description-cat-programs">
       <div class="description-cat-programs__wrapper">
-        <h2 class="title-secondary description-cat-programs__title">Как это работает</h2>
+        <h2 class="title description-cat-programs__title">Как это работает</h2>
         <ol class="description-cat-programs__list">
           <li class="description-cat-programs__list-item">
             <p class="description-cat-programs__content">Функциональное питание
@@ -104,8 +104,8 @@
       <div class="role-model__wrapper">
         <div class="role-model__inner role-model-inner">
           <div class="role-model-inner__content role-model-inner-content">
-            <h2 class="title-secondary role-model-inner-content__title">Живой пример</h2>
-            <p class="description role-model-inner-content__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <h2 class="title role-model-inner-content__title">Живой пример</h2>
+            <p class="role-model-inner-content__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           </div>
           <div class="role-model-inner__date role-model-inner-date">
             <div class="role-model-inner-date__container role-model-inner-date-container">
@@ -117,8 +117,8 @@
               <p class="role-model-inner-date-container__description">затрачено времени</p>
             </div>
             <div class="role-model-inner-date__container role-model-inner-date-container">
-              <p class="price-description role-model-inner-date-container__price-description">Затраты на питание:</p>
-              <p class="price-total-sum role-model-inner-date-container__price-total-sum">15000 руб.</p>
+              <p class="role-model-inner-date-container__price-description">Затраты на питание:</p>
+              <p class="role-model-inner-date-container__price-total-sum">15000 руб.</p>
             </div>
           </div>
         </div>
@@ -158,9 +158,10 @@
       </div>
     </section>
   </main>
+
   <footer class="page-footer">
-    <a class="page-footer__logo page-footer-logo" href="index.html">
-      <img class="page-footer-logo__text" src="#" width="128" height="24" alt="Название компании Cat Energy">
+    <a class="page-footer__logo" href="index.html">
+      <img class="page-footer__logo-text" src="#" width="128" height="24" alt="Название компании Cat Energy">
     </a>
     <ul class="page-footer__social-list">
       <li class="page-footer__social-list-item footer-social-list-item">

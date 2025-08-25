@@ -1,0 +1,28 @@
+.description-cat-programs {
+  background-color: $basic-white;
+  color: $basic-black;
+}
+
+//.description-cat-programs__wrapper {}
+
+.description-cat-programs__title {
+  margin: 0;
+  line-height: 111%;
+  text-align: left;
+}
+
+.description-cat-programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.description-cat-programs__list-item {
+  font-size: 14px;
+  line-height: 129%;
+  color: $special-dark-grey;
+}
+
+.description-cat-programs__content {
+  margin: 0;
+}

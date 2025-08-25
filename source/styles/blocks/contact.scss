@@ -1,0 +1,21 @@
+.contact {
+  background-color: $basic-white;
+  color: $basic-black;
+}
+
+// .contact__content-container {}
+
+.contact__slogan {
+  margin: 0;
+  font-family: $second-family;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+}
+
+.contact__address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 143%;
+  color: $special-dark-grey;
+}

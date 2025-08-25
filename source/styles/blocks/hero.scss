@@ -1,0 +1,35 @@
+.hero {
+  background-color: $basic-white;
+  color: $basic-black;
+}
+
+.hero__inner {
+  min-width: 320px; /* размеры пока будут так */
+  min-height: 302px;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index/hero-mobile-bg@2x.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__title {
+  color: $basic-white;
+  text-align: center;
+}
+
+.hero__slogan {
+  margin: 0;
+  font-family: $second-family;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: $basic-white;
+}
+
+// .hero__image {}
+
+.hero__link-programs {
+  text-decoration: none;
+  color: $basic-white;
+}

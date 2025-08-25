@@ -14,9 +14,10 @@
 </head>
 
 <body class="page__body">
+
   <header class="main-header">
     <div class="main-header__container">
-      <nav class="main-nav">
+      <nav class="main-header__nav main-nav">
         <a class="main-nav__logo" href="index.html">
           <img class="main-nav__logo-image" src="#" width="33" height="38" alt="Логотип компании">
           <img class="main-nav__logo-text" src="#" width="101" height="18" alt="Название компании Cat Energy">
@@ -29,11 +30,11 @@
             <a class="main-nav__list-link" href="#">Каталог продукции</a>
           </li>
           <li class="main-nav__list-item">
-            <a class="button main-nav__item-link" href="form-programs.html">Подбор программы</a>
+            <a class="main-nav__list-link" href="form-programs.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
-      <button class="button-toggle button-toggle--current button-toggle--open" type="button">
+      <button class="main-header__button button-toggle button-toggle--current button-toggle--open" type="button">
         <span class="button-toggle__menu-navigation visually-hidden">Открыть меню</span>
       </button>
     </div>
@@ -56,7 +57,7 @@
               </picture>
             </a>
             <a class="catalog-product-card__link" href="product-description.html">
-              <h3 class="catalog-product-card__title">Catn energy PRO 500 г</h3>
+              <h3 class="catalog-product-card__title">Cat energy PRO 500 г</h3>
             </a>
             <ul class="catalog-product-card__description-list">
               <li class="catalog-product-card__description-item card-description-item">
@@ -251,16 +252,16 @@
 
     <section class="additional-product">
       <div class="additional-product__wrapper">
-        <h2 class="additional-product__title">Дополнительные товары</h2>
+        <h2 class="title-secondary additional-product__title">Дополнительные товары</h2>
         <ul class="additional-product__cards">
           <li class="additional-product__card additional-product-card">
             <a class="additional-product-card__link" href="product-description.html">
               <h3 class="additional-product-card__title">Сахарозаменитель</h3>
             </a>
             <ul class="additional-product-card__description-list">
-              <li class="additional-product-card__description-item card-description-item">
-                <span class="card-description-item__title">1 упаковка (100 г)</span>
-                <span class="card-description-item__date">200 ₽</span>
+              <li class="additional-product-card__description-item additional-card-description-item">
+                <span class="additional-card-description-item__title">1 упаковка (100 г)</span>
+                <span class="additional-card-description-item__date">200 ₽</span>
               </li>
             </ul>
             <a class="button additional-product-card__order" href="place-order.html">Заказать</a>
@@ -270,9 +271,9 @@
               <h3 class="additional-product-card__title">Питьевая вода</h3>
             </a>
             <ul class="additional-product-card__description-list">
-              <li class="additional-product-card__description-item card-description-item">
-                <span class="card-description-item__title">5 литров</span>
-                <span class="card-description-item__date">50 ₽</span>
+              <li class="additional-product-card__description-item additional-card-description-item">
+                <span class="additional-card-description-item__title">5 литров</span>
+                <span class="additional-card-description-item__date">50 ₽</span>
               </li>
             </ul>
             <a class="button additional-product-card__order" href="place-order.html">Заказать</a>
@@ -282,9 +283,9 @@
               <h3 class="additional-product-card__title">Молоко</h3>
             </a>
             <ul class="additional-product-card__description-list">
-              <li class="additional-product-card__description-item card-description-item">
-                <span class="card-description-item__title">1 литр</span>
-                <span class="card-description-item__date">100 ₽</span>
+              <li class="additional-product-card__description-item additional-card-description-item">
+                <span class="additional-card-description-item__title">1 литр</span>
+                <span class="additional-card-description-item__date">100 ₽</span>
               </li>
             </ul>
             <a class="button additional-product-card__order" href="place-order.html">Заказать</a>
@@ -294,31 +295,31 @@
               <h3 class="additional-product-card__title">Витамины</h3>
             </a>
             <ul class="additional-product-card__description-list">
-              <li class="additional-product-card__description-item card-description-item">
-                <span class="card-description-item__title">1 упаковка (30 г)</span>
-                <span class="card-description-item__date">300 ₽</span>
+              <li class="additional-product-card__description-item additional-card-description-item">
+                <span class="additional-card-description-item__title">1 упаковка (30 г)</span>
+                <span class="additional-card-description-item__date">300 ₽</span>
               </li>
             </ul>
             <a class="button additional-product-card__order" href="place-order.html">Заказать</a>
           </li>
         </ul>
         <div class="additional-product__wrapper-slogan">
-          <p class="additional-product__slogan">Закажите все и получите чехол для кота в подарок!</p>
+          <p class="additional-product__slogan">Закажите все<br>и получите чехол для кота в подарок!</p>
         </div>
       </div>
     </section>
 
     <section class="subscribe">
-      <h2 class="subscribe__title">Акции и новинки</h2>
+      <h2 class="title-secondary subscribe__title">Акции и новинки</h2>
       <p class="subscribe__content">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="visualy-hidden" for="subscribe-email">Email</label>
+        <label class="visually-hidden" for="subscribe-email">Email</label>
         <input class="subscribe-form__field" type="email" id="subscribe-email" name="subscribe-email" placeholder="kuklachev@gmail.com" required>
         <button class="button subscribe-form__button-submit" type="submit">Подписаться</button>
       </form>
     </section>
 
-    <section class="contact">
+    <section class="contact contact-catalog">
       <div class="contact__content-container">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contact__slogan">Приглашаем к сотрудничеству дилеров!</p>

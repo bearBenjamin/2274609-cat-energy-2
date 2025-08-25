@@ -1,0 +1,36 @@
+.additional-product {
+  background-color: $basic-white;
+  color: $basic-black;
+  padding: 0 20px; /* пока так чтобы показать фоновую картинку в .additional-product__wrapper-slogan */
+}
+
+// .additional-product__wrapper {}
+
+.additional-product__title {
+  text-align: left;
+}
+
+.additional-product__cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// .additional-product__card {}
+
+.additional-product__wrapper-slogan {
+  min-width: 280px; /* размеры пока так */
+  min-height: 290px;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog/mobile-bg@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.additional-product__slogan {
+  margin: 0;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  color: $basic-white;
+}
