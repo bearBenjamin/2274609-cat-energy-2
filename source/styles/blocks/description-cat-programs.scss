@@ -7,7 +7,7 @@
 
 .description-cat-programs__title {
   margin: 0;
-  line-height: 111%;
+  line-height: 40px;
   text-align: left;
 }
 
@@ -19,8 +19,38 @@
 
 .description-cat-programs__list-item {
   font-size: 14px;
-  line-height: 129%;
+  line-height: 18px;
   color: $special-dark-grey;
+}
+
+.description-cat-programs__list-item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.description-cat-programs__list-item--one::before {
+  background-image: url("../../icons/icon-leaf.svg");
+  background-size: 30px 32px;
+}
+
+.description-cat-programs__list-item--two::before {
+  background-image: url("../../icons/icon-powder.svg");
+  background-size: 27px 29px;
+}
+
+.description-cat-programs__list-item--three::before {
+  background-image: url("../../icons/icon-eat.svg");
+  background-size: 25px 30px;
+}
+
+.description-cat-programs__list-item--four::before {
+  background-image: url("../../icons/icon-mass.svg");
+  background-size: 27px 31px;
 }
 
 .description-cat-programs__content {

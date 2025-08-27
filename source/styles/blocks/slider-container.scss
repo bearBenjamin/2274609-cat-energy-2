@@ -8,4 +8,38 @@
 
 // .slider-container__image--before {}
 
-// .slider-container__toggle {}
+.slider-container__toggle {
+  position: relative;
+  display: block;
+  width: 4px;
+  height: 256px; /* пока так */
+  background-color: $special-grey-2;
+}
+
+.slider-container__toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border: 2px solid $special-grey-2;
+  border-radius: 50%;
+  background-color: $basic-white;
+}
+
+.slider-container__toggle::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $special-grey-2;
+  mask-image: url("../../icons/slider-arows.svg");
+  mask-size: cover;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
