@@ -1,3 +1,28 @@
 // .footer-social-list-item {}
 
-// .footer-social-list-item__link {}
+.footer-social-list-item__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: $special-grey-2;
+  mask-repeat: no-repeat;
+  mask-position: bottom;
+}
+
+.footer-social-list-item__link--vk {
+  padding: 3px 0 2px 1px;
+  mask-image: url("../../icons/footer-vkontakte.svg");
+  mask-size: 27px 22px;
+}
+
+.footer-social-list-item__link--youtube {
+  padding: 2px 2px 1px;
+  mask-image: url("../../icons/footer-youtube.svg");
+  mask-size: 25px 20px;
+}
+
+.footer-social-list-item__link--telegram {
+  padding: 3px 4px 2px;
+  mask-image: url("../../icons/footer-telegram.svg");
+  mask-size: 20px 20px;
+}

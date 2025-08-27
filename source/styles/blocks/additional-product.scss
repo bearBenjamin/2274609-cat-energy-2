@@ -19,12 +19,27 @@
 // .additional-product__card {}
 
 .additional-product__wrapper-slogan {
+  position: relative;
   min-width: 280px; /* размеры пока так */
   min-height: 290px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog/mobile-bg@2x.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.additional-product__wrapper-slogan::after {
+  content: "";
+  position: absolute;
+  top: 59px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 78px;
+  height: 80px;
+  background-image: url("../../icons/catalog-order-all.svg");
+  background-size: 78px 80px;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .additional-product__slogan {
