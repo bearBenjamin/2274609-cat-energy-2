@@ -2,18 +2,39 @@
   font-family: $second-family;
   font-size: 20px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
-// .main-nav__logo {}
+.main-nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 56px;
 
-// .main-nav__logo-image {}
+  @media (min-width: $tablet-width) {
+    gap: 15px;
+  }
 
-// .main-nav__logo-text {}
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
+}
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    align-items: center;
+    gap: 33px;
+  }
 }
 
 // .main-nav__list-item {}
