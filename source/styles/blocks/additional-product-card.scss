@@ -7,6 +7,8 @@
 }
 
 .additional-product-card__link {
+  grid-column: 1/1;
+  grid-row: 1/1;
   color: $special-dark-grey-2;
 }
 
@@ -21,8 +23,23 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  grid-column: 1/1;
+  grid-row: 3/3;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/2;
+    grid-row: 1/1;
+  }
 }
 
 // .additional-product-card__description-item {}
 
-// .additional-product-card__order {}
+.additional-product-card__order {
+  grid-column: 1/1;
+  grid-row: 5/5;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/3;
+    grid-row: 1/1;
+  }
+}

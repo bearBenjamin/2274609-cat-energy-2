@@ -3,6 +3,30 @@
   color: $basic-black;
 }
 
-// .page-main__title-wrapper {}
+.page-main__title-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 27px;
+  padding-bottom: 41px;
 
-// .page-main__title {}
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    padding-top: 74px;
+    padding-bottom: 84px;
+  }
+}
+
+.page-main__title {
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

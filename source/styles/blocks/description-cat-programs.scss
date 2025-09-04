@@ -3,34 +3,97 @@
   color: $basic-black;
 }
 
-//.description-cat-programs__wrapper {}
+.description-cat-programs__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
 
 .description-cat-programs__title {
   margin: 0;
+  margin-left: 1px;
+  margin-bottom: 40px;
   line-height: 40px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .description-cat-programs__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+  padding-left: 80px;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    flex-flow: row wrap;
+    gap: 37px 156px;
+    margin-bottom: 92px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 0;
+    margin-bottom: 69px;
+  }
 }
 
 .description-cat-programs__list-item {
+  position: relative;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 227px;
+    padding: 141px 13px 47px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 151px 0 57px;
+  }
 }
 
 .description-cat-programs__list-item::before {
   content: "";
-  display: block;
+  position: absolute;
+  top: 0;
+  left: -80px;
   width: 60px;
   height: 60px;
   background-color: $basic-green;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    top: 40px;
+    left: 0;
+  }
+}
+
+.description-cat-programs__list-item--one {
+  @media (min-width: $desktop-width) {
+    width: 230px;
+    padding-right: 26px;
+    margin-right: 94px;
+  }
 }
 
 .description-cat-programs__list-item--one::before {
@@ -38,14 +101,41 @@
   background-size: 30px 32px;
 }
 
+.description-cat-programs__list-item--two {
+  @media (min-width: $desktop-width) {
+    width: 246px;
+    padding-right: 22px;
+    margin-right: 79px;
+  }
+}
+
 .description-cat-programs__list-item--two::before {
   background-image: url("../../icons/icon-powder.svg");
   background-size: 27px 29px;
 }
 
+.description-cat-programs__list-item--three {
+  @media (min-width: $desktop-width) {
+    width: 248px;
+    padding-right: 41px;
+    margin-right: 77px;
+  }
+}
+
 .description-cat-programs__list-item--three::before {
   background-image: url("../../icons/icon-eat.svg");
   background-size: 25px 30px;
+}
+
+.description-cat-programs__list-item--four {
+  @media (min-width: $desktop-width) {
+    width: 246px;
+  }
+}
+
+.description-cat-programs__content span {
+  display: inline-block;
+  margin-left: 1px;
 }
 
 .description-cat-programs__list-item--four::before {
