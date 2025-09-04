@@ -1,5 +1,11 @@
 // .subscribe-form {}
 
-// .subscribe-form__field {}
+.subscribe-form__field {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
 
-// .subscribe-form__button-submit {}
+.subscribe-form__button-submit {
+  grid-column: 2/2;
+  grid-row: 1/1;
+}

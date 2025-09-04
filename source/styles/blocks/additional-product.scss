@@ -1,31 +1,105 @@
 .additional-product {
   background-color: $basic-white;
   color: $basic-black;
-  padding: 0 20px; /* пока так чтобы показать фоновую картинку в .additional-product__wrapper-slogan */
 }
 
-// .additional-product__wrapper {}
+.additional-product__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 896px 245px;
+    grid-template-rows: max-content max-content;
+    column-gap: 80px;
+  }
+}
 
 .additional-product__title {
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 36px;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 74px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-left: 0;
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
 }
 
 .additional-product__cards {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 31px;
+  padding-top: 13px;
+  padding-bottom: 19px;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    margin-bottom: 70px;
+    gap: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 17px;
+    margin-bottom: 0;
+    grid-column: 1/1;
+    grid-row: 2/2;
+    gap: 32px;
+  }
 }
 
-// .additional-product__card {}
+.additional-product__card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content 13px max-content 15px max-content;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content;
+    column-gap: 40px;
+  }
+}
 
 .additional-product__wrapper-slogan {
   position: relative;
-  min-width: 280px; /* размеры пока так */
-  min-height: 290px;
+  width: 100%;
+  padding: 187px 61px 43px 58px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog/mobile-bg@2x.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 71px 125px 69px 421px;
+    background-position: center 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 42px 43px;
+    background-position: center;
+  }
 }
 
 .additional-product__wrapper-slogan::after {
@@ -40,6 +114,15 @@
   background-size: 78px 80px;
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 82px;
+
+    top: 55px;
+    left: 77px;
+    transform: none;
+  }
 }
 
 .additional-product__slogan {
@@ -48,4 +131,8 @@
   line-height: 125%;
   text-align: center;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }

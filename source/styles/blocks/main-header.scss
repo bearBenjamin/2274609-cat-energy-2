@@ -3,11 +3,11 @@
   background-color: $basic-white;
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 114px 580px;
-    justify-content: center;
-    padding-bottom: 82px;
+    // display: grid;
+    // grid-template-columns: 50% 50%;
+    // grid-template-rows: 114px 580px;
+    // justify-content: center;
+    // padding-bottom: 82px;
   }
 }
 
@@ -28,9 +28,6 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding-top: 55px;
-    grid-column: 1/-1;
-    grid-row: 1/2;
-    z-index: 1;
   }
 }
 
@@ -67,9 +64,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: -118px;
+    padding-bottom: 82px;
     justify-content: normal;
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-    z-index: 0;
   }
 }
