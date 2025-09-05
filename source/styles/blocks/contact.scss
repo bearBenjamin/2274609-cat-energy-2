@@ -10,8 +10,6 @@
 }
 
 .contact__content-container {
-  width: 280px;
-  margin: 0 auto;
   padding: 26px 1px;
   display: flex;
 
@@ -67,9 +65,8 @@
 }
 
 .contact__map-container {
-  width: 320px;
-  height: 362px;
-  margin: 0 auto;
+  width: 100%;
+  height: auto;
 
   @media (min-width: $tablet-width) {
     width: 768px;

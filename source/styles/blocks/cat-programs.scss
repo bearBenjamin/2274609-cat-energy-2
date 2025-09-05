@@ -3,27 +3,14 @@
   color: $basic-black;
 }
 
-.cat-programs__wrapper {
-  width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-  }
-}
-
 .cat-programs__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     gap: 30px;
@@ -39,7 +26,7 @@
 
 .cat-programs__list-item {
   position: relative;
-  padding: 30px 33px 18px 20px;
+  padding: 30px 33px 22px 20px;
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
@@ -160,7 +147,7 @@
 
 .cat-programs__item-content {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 42px;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;

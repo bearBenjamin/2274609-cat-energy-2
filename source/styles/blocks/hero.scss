@@ -1,19 +1,14 @@
 .hero {
-  width: 100%;
   background-color: $basic-white;
-  color: $basic-black;
-}
-
-.hero__inner {
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 280px;
-  justify-content: center;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index/hero-mobile-bg@2x.jpg");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 320px 302px;
+  color: $basic-black;
+}
+
+.hero__inner {
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
@@ -30,11 +25,13 @@
     background-position: top right;
     background-size: 720px 694px;
     background-repeat: no-repeat;
+    margin-bottom: 82px;
   }
 }
 
 .hero__title {
-  margin-top: 27px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-bottom: 25px;
   text-align: center;
   color: $basic-white;
@@ -60,12 +57,12 @@
 
 .hero__slogan {
   margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
   margin-bottom: 27px;
   font-family: $second-family;
   font-size: 14px;
   line-height: 14px;
-  grid-column: 1/-1;
-  grid-row: 2;
   text-transform: uppercase;
   text-align: center;
   color: $basic-white;
@@ -87,7 +84,6 @@
 }
 
 .hero__image-wrapper {
-  display: block;
   width: 280px;
   height: auto;
   margin-bottom: 3px;
@@ -111,7 +107,7 @@
 
 .hero__link-programs {
   display: block;
-  width: 100%;
+  padding: 10px 64px;
   margin: 0 auto;
   text-align: center;
   text-decoration: none;

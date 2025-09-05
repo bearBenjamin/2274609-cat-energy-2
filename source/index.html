@@ -16,19 +16,23 @@
 <body class="page__body">
 
   <header class="main-header">
-    <div class="main-header__container">
+    <div class="main-header__container wrapper">
       <nav class="main-header__nav main-nav">
         <a class="main-nav__logo" href="#">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/logo-dekstop.svg" width="70" height="59" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-            <img class="main-nav__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип компании">
-          </picture>
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/logo-text-tablet.svg" width="118" height="21" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
-            <img class="main-nav__logo-text" src="images/logo-tekst.svg" width="101" height="18" alt="Название компании Cat Energy">
-          </picture>
+          <div class="main-nav__logo-image-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/logo-dekstop.svg" width="70" height="59" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+              <img class="main-nav__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип компании">
+            </picture>
+          </div>
+          <div class="main-nav__logo-text-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/logo-text-tablet.svg" width="118" height="21" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+              <img class="main-nav__logo-text" src="images/logo-tekst.svg" width="101" height="18" alt="Название компании Cat Energy">
+            </picture>
+          </div>
         </a>
         <ul class="main-nav__list">
           <li class="main-nav__list-item main-nav__list-item--current">
@@ -47,7 +51,7 @@
       </button>
     </div>
     <article class="main-header__hero hero">
-      <div class="hero__inner">
+      <div class="hero__inner wrapper">
         <h1 class="title hero__title">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <div class="hero__image-wrapper">
@@ -64,7 +68,7 @@
 
   <main class="main-container">
     <section class="cat-programs">
-      <div class="cat-programs__wrapper">
+      <div class="wrapper">
         <h2 class="visually-hidden">Программы тренировок</h2>
         <ul class="cat-programs__list">
           <li class="cat-programs__list-item cat-programs__list-item--slim">
@@ -82,7 +86,7 @@
     </section>
 
     <section class="description-cat-programs">
-      <div class="description-cat-programs__wrapper">
+      <div class="wrapper">
         <h2 class="title description-cat-programs__title">Как это работает</h2>
         <ol class="description-cat-programs__list">
           <li class="description-cat-programs__list-item description-cat-programs__list-item--one">
@@ -111,7 +115,7 @@
     </section>
 
     <section class="role-model">
-      <div class="role-model__wrapper">
+      <div class="wrapper">
         <div class="role-model__inner role-model-inner">
           <!-- <div class="role-model-inner__content role-model-inner-content"> -->
           <h2 class="title role-model__title">Живой пример</h2>
@@ -151,7 +155,7 @@
     </section>
 
     <section class="contact">
-      <div class="contact__wrapper">
+      <div class="contact__wrapper wrapper">
         <div class="contact__content-container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contact__slogan">Приглашаем<br> к сотрудничеству дилеров!</p>
@@ -160,19 +164,20 @@
             <span>Санкт-Петербург</span>
           </address>
         </div>
-        <div class="contact__map-container">
-          <picture>
-            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-dekstop@1x.png 1x, images/map-dekstop@2x.png 2x">
-            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-            <img class="contact__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Cat Energy на карте города">
-          </picture>
-        </div>
       </div>
+      <div class="contact__map-container">
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-dekstop@1x.png 1x, images/map-dekstop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="contact__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Cat Energy на карте города">
+        </picture>
+      </div>
+
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__grid">
+    <div class="page-footer__container wrapper">
       <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-text" src="images/logo-tekst.svg" width="128" height="24" alt="Название компании Cat Energy">
       </a>

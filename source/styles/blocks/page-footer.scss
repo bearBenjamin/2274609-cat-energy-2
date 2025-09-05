@@ -12,7 +12,7 @@
   }
 }
 
-.page-footer__grid {
+.page-footer__container {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: max-content 40px max-content 40px max-content;
@@ -47,6 +47,7 @@
   list-style: none;
   grid-row: 3/3;
   display: flex;
+  flex-wrap: wrap;
   width: 132px;
   gap: 24px;
   justify-content: center;
@@ -66,6 +67,7 @@
 .page-footer__developer-contact {
   grid-row: 5/5;
   display: flex;
+  flex-wrap: wrap;
   width: 280px;
   justify-content: space-between;
   align-items: center;

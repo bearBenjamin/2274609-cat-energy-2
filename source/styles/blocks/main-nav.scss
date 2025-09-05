@@ -11,16 +11,30 @@
 
 .main-nav__logo {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 56px;
+  column-gap: 56px;
 
   @media (min-width: $tablet-width) {
-    gap: 15px;
+    align-items: center;
+    column-gap: 13px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 14px;
+    column-gap: 14px;
   }
+}
+
+.main-nav__logo-image-wrapper {
+  display: block;
+  width: 60px;
+  height: 50px;
+}
+
+.main-nav__logo-text-wrapper {
+  display: block;
+  width: 101px;
+  height: 18px;
 }
 
 .main-nav__list {

@@ -1,19 +1,8 @@
 .description-cat-programs {
+  padding-top: 20px;
+  padding-bottom: 37px;
   background-color: $basic-white;
   color: $basic-black;
-}
-
-.description-cat-programs__wrapper {
-  width: 280px;
-  margin: 0 auto;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-  }
 }
 
 .description-cat-programs__title {
@@ -38,7 +27,6 @@
   flex-flow: column;
   gap: 20px;
   padding-left: 80px;
-  margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
@@ -55,6 +43,8 @@
 
 .description-cat-programs__list-item {
   position: relative;
+  margin-top: 2px;
+  margin-bottom: 4px;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
