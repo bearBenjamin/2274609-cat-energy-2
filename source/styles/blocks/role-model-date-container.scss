@@ -1,25 +1,38 @@
 .role-model-date-container {
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px $special-grey;
   text-align: center;
 }
 
 .role-model-date-container__date {
   margin: 0;
+  padding-top: 15px;
+  padding-bottom: 16px;
   font-family: $second-family;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 20px;
     font-size: 30px;
     line-height: 37px;
-    margin-bottom: 11px;
   }
 }
 
 .role-model-date-container__description {
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 0;
+  padding-left: 16px;
+  padding-right: 19px;
   font-size: 12px;
   line-height: 12px;
   color: $special-dark-grey;
+
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -27,33 +40,34 @@
   }
 }
 
-.role-model-price-container__price-description,
-.role-model-price-container__price-total-sum {
-  margin: 0;
-  display: inline;
-  font-family: $second-family;
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
+.role-model-date-container__description-mass {
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: right;
+    width: 116px;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: -6px;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
-    display: inline;
+    background-color: #eaeaea;
   }
 }
 
-.role-model-price-container__price-description {
+.role-model-date-container__description-time {
+  background-color: #eaeaea;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 9px;
+    width: 145px;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: -6px;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    background-color: #eaeaea;
   }
 }

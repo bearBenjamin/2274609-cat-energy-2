@@ -1,5 +1,5 @@
 .role-model {
-  padding-top: 25px;
+  padding-top: 37px;
   padding-bottom: 40px;
   background-color: #eaeaea;
   color: $basic-black;
@@ -17,8 +17,21 @@
   }
 }
 
+.role-model__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 436px 560px;
+    grid-template-rows: auto;
+    column-gap: 224px;
+  }
+}
+
 .role-model__inner {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 99px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 436px;
@@ -45,7 +58,6 @@
 
 .role-model__description {
   margin: 0;
-  width: 100%;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
@@ -58,6 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-right: 4px;
     margin-bottom: 69px;
   }
 }
@@ -65,7 +78,7 @@
 .role-model__date {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px 20px;
+  gap: 35px 32px;
   justify-content: center;
 
   @media (min-width: $tablet-width) {
@@ -79,6 +92,7 @@
 }
 
 .role-model__date-container {
+  position: relative;
   width: 124px;
 
   @media (min-width: $tablet-width) {
@@ -91,14 +105,19 @@
 
   @media (min-width: $tablet-width) {
     margin-left: auto;
+    padding-top: 11px;
+    padding-bottom: 17px;
     width: 174px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+    padding-top: 5px;
+    padding-bottom: 0;
     width: 327px;
     display: flex;
-    justify-content: space-between;
+    gap: 63px;
+    text-align: center;
   }
 }
 

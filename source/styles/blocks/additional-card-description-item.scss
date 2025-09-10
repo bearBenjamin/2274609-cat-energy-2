@@ -1,10 +1,37 @@
 .additional-card-description-item {
   font-weight: 400;
   font-size: 14px;
-  line-height: 100%;
+  line-height: 14px;
+  text-transform: none;
   color: $special-dark-grey;
 }
 
-//.additional-card-description-item__title {}
+.additional-card-description-item__title {
+  @media (min-width: $tablet-width) {
+    grid-area: 1/1/2/2;
+    margin-top: 1px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
 
-//.additional-card-description-item__date {}
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+    text-align: left;
+  }
+}
+
+.additional-card-description-item__date {
+  @media (min-width: $tablet-width) {
+    grid-area: 1/2/2/3;
+    margin-right: 2px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 3px;
+    text-align: left;
+  }
+}

@@ -10,7 +10,7 @@
 }
 
 .contact__content-container {
-  padding: 26px 1px;
+  padding: 26px 0;
   display: flex;
 
   @media (min-width: $tablet-width) {
@@ -62,21 +62,15 @@
     font-size: 16px;
     line-height: 125%;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .contact__map-container {
   width: 100%;
   height: auto;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    height: 400px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-    height: 440px;
-  }
 }
 
 .contact__map-image {

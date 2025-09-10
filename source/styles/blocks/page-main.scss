@@ -4,21 +4,15 @@
 }
 
 .page-main__title-wrapper {
-  width: 280px;
-  margin: 0 auto;
   padding-top: 27px;
   padding-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    margin: 0 auto;
     padding-top: 65px;
     padding-bottom: 84px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
     padding-top: 74px;
     padding-bottom: 84px;
   }

@@ -3,6 +3,16 @@
   padding-bottom: 37px;
   background-color: $basic-white;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+  }
 }
 
 .description-cat-programs__title {
@@ -13,9 +23,8 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
     margin-bottom: 32px;
+    line-height: 60px;
   }
 }
 
@@ -31,13 +40,11 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
     flex-flow: row wrap;
-    gap: 37px 156px;
-    margin-bottom: 92px;
+    gap: 37px 134px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 0;
-    margin-bottom: 69px;
   }
 }
 
@@ -50,8 +57,11 @@
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: 227px;
-    padding: 141px 13px 47px 0;
+    width: 249px;
+    margin: 0;
+    padding: 152px 0 57px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,7 +74,7 @@
 .description-cat-programs__list-item::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -2px;
   left: -80px;
   width: 60px;
   height: 60px;
@@ -73,12 +83,14 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
     top: 40px;
     left: 0;
   }
 }
 
-.description-cat-programs__list-item--one {
+.description-cat-programs__list-item-one {
   @media (min-width: $desktop-width) {
     width: 230px;
     padding-right: 26px;
@@ -86,12 +98,12 @@
   }
 }
 
-.description-cat-programs__list-item--one::before {
-  background-image: url("../../icons/icon-leaf.svg");
+.description-cat-programs__list-item-one::before {
+  background-image: url("../../icons/stack.svg#icon-leaf");
   background-size: 30px 32px;
 }
 
-.description-cat-programs__list-item--two {
+.description-cat-programs__list-item-two {
   @media (min-width: $desktop-width) {
     width: 246px;
     padding-right: 22px;
@@ -99,12 +111,12 @@
   }
 }
 
-.description-cat-programs__list-item--two::before {
-  background-image: url("../../icons/icon-powder.svg");
+.description-cat-programs__list-item-two::before {
+  background-image: url("../../icons/stack.svg#icon-powder");
   background-size: 27px 29px;
 }
 
-.description-cat-programs__list-item--three {
+.description-cat-programs__list-item-three {
   @media (min-width: $desktop-width) {
     width: 248px;
     padding-right: 41px;
@@ -112,12 +124,12 @@
   }
 }
 
-.description-cat-programs__list-item--three::before {
-  background-image: url("../../icons/icon-eat.svg");
+.description-cat-programs__list-item-three::before {
+  background-image: url("../../icons/stack.svg#icon-eat");
   background-size: 25px 30px;
 }
 
-.description-cat-programs__list-item--four {
+.description-cat-programs__list-item-four {
   @media (min-width: $desktop-width) {
     width: 246px;
   }
@@ -128,8 +140,8 @@
   margin-left: 1px;
 }
 
-.description-cat-programs__list-item--four::before {
-  background-image: url("../../icons/icon-mass.svg");
+.description-cat-programs__list-item-four::before {
+  background-image: url("../../icons/stack.svg#icon-mass");
   background-size: 27px 31px;
 }
 

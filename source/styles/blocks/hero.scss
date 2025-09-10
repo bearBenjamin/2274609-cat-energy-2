@@ -5,27 +5,33 @@
   background-repeat: no-repeat;
   background-size: 320px 302px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index/hero-desktop-bg@1x.jpg");
+    background-position: top right;
+    background-size: 720px 700px;
+    background-repeat: no-repeat;
+  }
 }
 
 .hero__inner {
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    padding-top: 65px;
-    background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
-    grid-template-columns: 557px 557px 1fr;
-    grid-template-rows: 59px 29px 81px 120px 40px 20px 52px 54px 184px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index/hero-desktop-bg@1x.jpg");
-    background-position: top right;
-    background-size: 720px 694px;
-    background-repeat: no-repeat;
-    margin-bottom: 82px;
+    grid-template-columns: 447px auto;
+    grid-template-rows: 270px 72px 238px;
   }
 }
 
@@ -37,12 +43,10 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    width: 416px;
     margin-top: 0;
-    margin-left: 90px;
+    padding-left: 90px;
+    padding-right: 202px;
     margin-bottom: 40px;
-    grid-column: 1;
-    grid-row: 1;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
@@ -50,8 +54,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: 4/1/-1/2;
-    margin-left: 190px;
+    width: 416px;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    padding-top: 110px;
+    padding-left: 0;
+    padding-right: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 }
 
@@ -59,7 +69,7 @@
   margin: 0;
   padding-left: 40px;
   padding-right: 40px;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   font-family: $second-family;
   font-size: 14px;
   line-height: 14px;
@@ -68,18 +78,23 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    width: 283px;
-    margin-left: 90px;
+    padding-right: 307px;
+    padding-left: 90px;
     margin-bottom: 50px;
     font-size: 20px;
     line-height: 20px;
+    text-align: left;
     text-transform: uppercase;
     color: $basic-black;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 190px;
-    grid-area: 6/1;
+    width: 283px;
+    margin-left: 80px;
+    margin-bottom: 52px;
+    padding: 0;
+    grid-column: 1/2;
+    grid-row: 2/2;
   }
 }
 
@@ -90,14 +105,17 @@
 
   @media (min-width: $tablet-width) {
     width: 709px;
-    margin-top: -50px;
+    margin-top: -29px;
     margin-bottom: 0;
+    grid-column: 1/-1;
+    grid-row: 3/4;
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
-    margin-top: 0;
-    grid-area: 3/2/9/3;
+    margin-top: 29px;
+    grid-column: 2/2;
+    grid-row: 1/3;
   }
 }
 
@@ -115,66 +133,19 @@
 
   @media (min-width: $tablet-width) {
     width: 242px;
+    padding: 14px 26px;
     margin-left: 90px;
-    grid-column: 1/-1;
+    grid-column: 1/2;
     grid-row: 3/3;
+    align-self: start;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 190px;
-    grid-area: 8/1/8/-1;
+    margin-left: 80px;
+    padding: 14px 26px;
+    grid-column: 1/2;
+    grid-row: 3/3;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
-
-/* @media (min-width: $desktop-width) {
-  .hero {
-    padding: 0;
-  }
-
-  .hero--grid {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-  }
-
-  .hero__inner {
-    max-width: 1440px;
-    padding-top: 0;
-    display: grid;
-    grid-template-columns: 557px 1fr 1fr;
-    grid-template-rows: 344px auto auto;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index/hero-desktop-bg@1x.jpg");
-    background-position: top right;
-    background-size: 720px 694px;
-    background-repeat: no-repeat;
-  }
-
-  .hero__title {
-    grid-column: 1;
-    grid-row: 1;
-    margin-top: 224px;
-    margin-left: 190px;
-    margin-bottom: 0;
-  }
-
-  .hero__slogan {
-    grid-column: 1;
-    grid-row: 2;
-    margin-top: 40px;
-    margin-left: 190px;
-    margin-bottom: 0;
-  }
-
-  .hero__link-programs {
-    position: static;
-    grid-column: 1;
-    grid-row: 3;
-    margin-top: 52px;
-    margin-left: 190px;
-    margin-bottom: 184px;
-  }
-
-  .hero__image {
-    grid-column: 2;
-    margin-top: 143px;
-  }
-} */
