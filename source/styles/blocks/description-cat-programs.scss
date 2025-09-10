@@ -91,6 +91,13 @@
 }
 
 .description-cat-programs__list-item-one {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#description-bg-1");
+    background-size: 71px 253px;
+    background-position: 126px 28px;
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: $desktop-width) {
     width: 230px;
     padding-right: 26px;
@@ -104,6 +111,13 @@
 }
 
 .description-cat-programs__list-item-two {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#description-bg-2");
+    background-size: 112px 243px;
+    background-position: 123px 32px;
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: $desktop-width) {
     width: 246px;
     padding-right: 22px;
@@ -117,6 +131,13 @@
 }
 
 .description-cat-programs__list-item-three {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#description-bg-3");
+    background-size: 112px 243px;
+    background-position: 123px 32px;
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: $desktop-width) {
     width: 248px;
     padding-right: 41px;
@@ -130,6 +151,13 @@
 }
 
 .description-cat-programs__list-item-four {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../icons/stack.svg#description-bg-4");
+    background-size: 121px 243px;
+    background-position: 125px 32px;
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: $desktop-width) {
     width: 246px;
   }
