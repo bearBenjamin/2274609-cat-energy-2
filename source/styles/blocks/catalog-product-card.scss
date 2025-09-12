@@ -12,6 +12,7 @@
 }
 
 .catalog-product-card--last {
+  position: relative;
   padding-top: 25px;
   padding-bottom: 25px;
   display: grid;
@@ -22,11 +23,40 @@
     display: block;
     padding: 132px 37px 40px;
     background: linear-gradient(to bottom, $basic-white 0, $basic-white 506px);
+    box-shadow: 0 0 0 1px #f2f2f2;
+
+    &::before {
+      content: "";
+      width: 100%;
+      position: absolute;
+      top: 82px;
+      left: 0;
+      box-shadow: 0 0 0 1px #f2f2f2;
+    }
+
+    &::after {
+      content: "";
+      width: 327px;
+      height: 85px;
+      position: absolute;
+      bottom: 429px;
+      right: -2px;
+      background-color: $basic-white;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 130px 37px 40px;
   }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: -20px;
+  //   width: 320px;
+  //   box-shadow: 0 0 0 1 $special-grey-1;
+  // }
 }
 
 .catalog-product-card__content {
@@ -35,7 +65,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 37px 52px;
-  gap: 14px;
+  gap: 19px;
 
   @media (min-width: $tablet-width) {
     //width: 250px;
@@ -62,7 +92,7 @@
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin-bottom: 82px;
+    margin-bottom: 92px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,7 +126,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
-    margin-bottom: 50px;
+    margin-bottom: 49px;
     width: 60px;
     height: 60px;
   }
@@ -130,8 +160,8 @@
   color: $special-dark-grey-2;
 
   @media (min-width: $tablet-width) {
-    padding-left: 60px;
-    padding-right: 55px;
+    padding-left: 56px;
+    padding-right: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -141,7 +171,7 @@
 }
 
 .catalog-product-card__link-title--last {
-  width: 219px;
+  width: 222px;
   padding: 0 8px 8px;
   margin: 0;
   font-size: 16px;
@@ -211,11 +241,11 @@
   justify-content: space-between;
 }
 
-//@media (min-width: $tablet-width) {
 .catalog-product-card__description-item:nth-child(2) {
-  padding: 2px 0;
+  @media (min-width: $tablet-width) {
+    padding: 2px 0;
+  }
 }
-// }
 
 @media (min-width: $desktop-width) {
   .catalog-product-card__description-item:last-child {

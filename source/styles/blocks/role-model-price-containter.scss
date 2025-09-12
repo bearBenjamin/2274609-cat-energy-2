@@ -9,7 +9,6 @@
 .role-model-price-container__price-total-sum {
   margin: 0;
   display: inline;
-  letter-spacing: 0.08px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -26,6 +25,7 @@
 .role-model-price-container__price-description {
   @media (min-width: $tablet-width) {
     margin-bottom: 9px;
+    letter-spacing: 0.1px;
   }
 
   @media (min-width: $desktop-width) {

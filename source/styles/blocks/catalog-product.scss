@@ -10,19 +10,21 @@
   display: grid;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: 511px 511px 511px 511px;
     gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 245px);
+    grid-template-rows: 511px 511px;
     gap: 63px 80px;
   }
 }
 
 .catalog-product__card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 140px 140px;
   grid-template-rows: 107px max-content;
   row-gap: 17px;
 

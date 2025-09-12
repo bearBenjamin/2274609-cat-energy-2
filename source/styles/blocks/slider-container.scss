@@ -37,6 +37,10 @@
   z-index: 1;
   cursor: pointer;
   background-color: $special-grey-2;
+
+  @media (min-width: $tablet-width) {
+    left: 49.5%;
+  }
 }
 
 .slider-container__toggle::before {

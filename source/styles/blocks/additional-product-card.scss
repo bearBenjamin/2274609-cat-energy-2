@@ -73,12 +73,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 140px 43px;
+    grid-template-columns: 140px 44px;
     gap: 103px;
     align-items: center;
   }
 }
-
 
 .additional-product-card__order {
   padding: 10px 109px 10px 110px;

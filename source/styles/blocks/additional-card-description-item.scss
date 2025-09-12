@@ -9,7 +9,7 @@
 .additional-card-description-item__title {
   @media (min-width: $tablet-width) {
     grid-area: 1/1/2/2;
-    margin-top: 1px;
+    margin-top: 3px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;
@@ -24,7 +24,8 @@
 .additional-card-description-item__date {
   @media (min-width: $tablet-width) {
     grid-area: 1/2/2/3;
-    margin-right: 2px;
+    margin-top: 2px;
+    margin-right: 3px;
     font-size: 16px;
     line-height: 20px;
     text-align: right;

@@ -21,13 +21,13 @@
   gap: 40px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: auto max-content 160px max-content 120px max-content auto;
+    grid-template-columns: auto max-content 160px max-content 126px max-content auto;
     grid-template-rows: 37px;
     gap: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: auto max-content 416px max-content 376px max-content auto;
+    grid-template-columns: auto 128px 416px 132px 378px 168px auto;
   }
 }
 
@@ -106,7 +106,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 6/6;
     grid-row: 1/1;
-    width: 168px;
+    width: 163px;
     height: 37px;
   }
 }

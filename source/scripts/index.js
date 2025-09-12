@@ -1,4 +1,3 @@
-/* в этот файл добавляет скрипты*/
 const mainNav = document.querySelector('.main-nav__list');
 const navToggle = document.querySelector('.main-header__button');
 const navToggleText = document.querySelector('.button-toggle__text');

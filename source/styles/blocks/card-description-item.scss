@@ -4,10 +4,23 @@
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     font-size: 16px;
     line-height: 20px;
   }
 }
+
+.card-description-item::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 0 0 1px $special-grey;
+  }
+}
+
 
 .card-description-item__title {
   text-align: center;

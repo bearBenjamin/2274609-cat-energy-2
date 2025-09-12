@@ -1,6 +1,11 @@
 .cat-programs {
   background-color: $basic-white;
   color: $basic-black;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 
   @media (min-width: $desktop-width) {
     padding-top: 82px;
