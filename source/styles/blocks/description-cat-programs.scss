@@ -26,6 +26,10 @@
     margin-bottom: 32px;
     line-height: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .description-cat-programs__list {
@@ -45,7 +49,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 0;
+    gap: 76px;
   }
 }
 
@@ -67,6 +71,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 248px;
     font-size: 16px;
     line-height: 24px;
     padding: 151px 0 57px;
@@ -106,15 +111,18 @@
 
 .description-cat-programs__list-item-one {
   @media (min-width: $desktop-width) {
-    width: 230px;
     padding-right: 26px;
-    margin-right: 94px;
   }
 }
 
 .description-cat-programs__list-item-one::before {
   background-image: url("../../icons/stack.svg#icon-leaf");
   background-size: 30px 32px;
+
+  @media (min-width: $desktop-width) {
+    background-size: 32px 32px;
+    top: 40px;
+  }
 }
 
 .description-cat-programs__list-item-one::after {
@@ -126,44 +134,58 @@
 
 .description-cat-programs__list-item-two {
   @media (min-width: $desktop-width) {
-    width: 246px;
     padding-right: 22px;
-    margin-right: 79px;
   }
 }
 
 .description-cat-programs__list-item-two::before {
   background-image: url("../../icons/stack.svg#icon-powder");
   background-size: 27px 29px;
+
+  @media (min-width: $desktop-width) {
+    background-size: 28px 29px;
+    top: 40px;
+    left: 1px;
+  }
 }
 
 .description-cat-programs__list-item-three {
   @media (min-width: $desktop-width) {
-    width: 248px;
     padding-right: 41px;
-    margin-right: 77px;
+    padding-left: 1px;
   }
 }
 
 .description-cat-programs__list-item-three::before {
   background-image: url("../../icons/stack.svg#icon-eat");
   background-size: 25px 30px;
+
+  @media (min-width: $desktop-width) {
+    background-size: 25px 31px;
+    top: 40px;
+    left: 2px;
+  }
 }
 
 .description-cat-programs__list-item-four {
   @media (min-width: $desktop-width) {
-    width: 246px;
+    padding-left: 2px;
   }
 }
 
 .description-cat-programs__content span {
   display: inline-block;
-  margin-left: 1px;
 }
 
 .description-cat-programs__list-item-four::before {
   background-image: url("../../icons/stack.svg#icon-mass");
   background-size: 27px 31px;
+
+  @media (min-width: $desktop-width) {
+    background-size: 28px 31px;
+    top: 40px;
+    left: 3px;
+  }
 }
 
 .description-cat-programs__content {
