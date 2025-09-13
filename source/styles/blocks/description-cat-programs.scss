@@ -38,6 +38,7 @@
   padding-left: 80px;
 
   @media (min-width: $tablet-width) {
+    counter-reset: item-count;
     padding-left: 0;
     flex-flow: row wrap;
     gap: 35px 135px;
@@ -57,6 +58,7 @@
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
+    counter-increment: item-count 1;
     width: 249px;
     margin: 0;
     padding: 152px 0 57px;
@@ -90,14 +92,19 @@
   }
 }
 
-.description-cat-programs__list-item-one {
+.description-cat-programs__list-item::after {
   @media (min-width: $tablet-width) {
-    background-image: url("../../icons/stack.svg#description-bg-1");
-    background-size: 71px 253px;
-    background-position: 126px 28px;
-    background-repeat: no-repeat;
+    content: counter(item-count);
+    position: absolute;
+    top: 130px;
+    left: 113px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    color: $basic-grey;
   }
+}
 
+.description-cat-programs__list-item-one {
   @media (min-width: $desktop-width) {
     width: 230px;
     padding-right: 26px;
@@ -110,14 +117,14 @@
   background-size: 30px 32px;
 }
 
-.description-cat-programs__list-item-two {
+.description-cat-programs__list-item-one::after {
   @media (min-width: $tablet-width) {
-    background-image: url("../../icons/stack.svg#description-bg-2");
-    background-size: 112px 243px;
-    background-position: 123px 32px;
-    background-repeat: no-repeat;
+    top: 130px;
+    left: 119px;
   }
+}
 
+.description-cat-programs__list-item-two {
   @media (min-width: $desktop-width) {
     width: 246px;
     padding-right: 22px;
@@ -131,13 +138,6 @@
 }
 
 .description-cat-programs__list-item-three {
-  @media (min-width: $tablet-width) {
-    background-image: url("../../icons/stack.svg#description-bg-3");
-    background-size: 112px 243px;
-    background-position: 123px 32px;
-    background-repeat: no-repeat;
-  }
-
   @media (min-width: $desktop-width) {
     width: 248px;
     padding-right: 41px;
@@ -151,13 +151,6 @@
 }
 
 .description-cat-programs__list-item-four {
-  @media (min-width: $tablet-width) {
-    background-image: url("../../icons/stack.svg#description-bg-4");
-    background-size: 121px 243px;
-    background-position: 125px 32px;
-    background-repeat: no-repeat;
-  }
-
   @media (min-width: $desktop-width) {
     width: 246px;
   }
@@ -175,4 +168,6 @@
 
 .description-cat-programs__content {
   margin: 0;
+  position: relative;
+  z-index: 2;
 }

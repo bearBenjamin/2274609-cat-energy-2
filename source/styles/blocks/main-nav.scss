@@ -99,7 +99,7 @@
   display: none;
   flex-direction: column;
   background-color: $basic-white;
-  z-index: 2;
+  z-index: 5;
 
   @media (min-width: $tablet-width) {
     position: static;
@@ -183,16 +183,18 @@
 }
 
 .main-nav__list-link--current::after {
-  position: absolute;
-  content: "";
-  height: 2px;
-  bottom: -8px;
-  left: 0;
-  right: 0;
-  background-color: $basic-green;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    right: 0;
+    background-color: $basic-green;
 
-  @media (min-width: $desktop-width) {
-    background-color: $basic-white;
+    @media (min-width: $desktop-width) {
+      background-color: $basic-white;
+    }
   }
 }
 
