@@ -61,6 +61,7 @@
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
+  overflow-wrap: break-word;
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
@@ -80,6 +81,7 @@
   flex-wrap: wrap;
   gap: 35px 32px;
   justify-content: center;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     gap: 43px;

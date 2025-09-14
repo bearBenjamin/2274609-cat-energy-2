@@ -31,6 +31,7 @@
   padding-right: 19px;
   font-size: 12px;
   line-height: 12px;
+  overflow-wrap: break-word;
   color: $special-dark-grey;
 
 
@@ -41,10 +42,14 @@
 }
 
 .role-model-date-container__description-mass {
+  width: 90px;
+  height: 24px;
   background-color: #eaeaea;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 116px;
+    height: 14px;
     padding-left: 10px;
     padding-right: 10px;
     bottom: -8px;
@@ -57,10 +62,14 @@
 }
 
 .role-model-date-container__description-time {
+  width: 93px;
+  height: 24px;
+  overflow: hidden;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     width: 145px;
+    height: 14px;
     padding-left: 10px;
     padding-right: 10px;
     bottom: -8px;

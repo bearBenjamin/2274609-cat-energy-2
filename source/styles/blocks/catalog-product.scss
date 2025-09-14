@@ -26,7 +26,7 @@
   display: grid;
   grid-template-columns: 140px 140px;
   grid-template-rows: 107px max-content;
-  row-gap: 17px;
+  row-gap: 16px;
 
   @media (min-width: $tablet-width) {
     display: flex;

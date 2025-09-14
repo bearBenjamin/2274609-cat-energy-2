@@ -23,6 +23,7 @@
   text-align: left;
 
   @media (min-width: $tablet-width) {
+    margin-left: 0;
     margin-bottom: 32px;
     line-height: 60px;
   }
@@ -55,10 +56,12 @@
 
 .description-cat-programs__list-item {
   position: relative;
+  width: 200px;
   margin-top: 2px;
   margin-bottom: 4px;
   font-size: 14px;
   line-height: 18px;
+  overflow-wrap: break-word;
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {

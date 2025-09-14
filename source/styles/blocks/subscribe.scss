@@ -5,12 +5,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 96px;
-    padding-bottom: 104px;
+    padding-bottom: 102px;
   }
 }
 
@@ -19,7 +19,7 @@
   width: 100%;
   display: block;
   position: relative;
-  top: 52px;
+  top: 51px;
   left: 212px;
   box-shadow: 0 0 0 2px $basic-green;
 
@@ -38,7 +38,7 @@
   position: relative;
   margin: 0;
   max-width: 192px;
-  padding-top: 41px;
+  padding-top: 40px;
   padding-right: 40px;
   padding-bottom: 32px;
   text-align: left;
@@ -90,7 +90,7 @@
 .subscribe__form {
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 14px;
 
   @media (min-width: $tablet-width) {
     padding-left: 38px;

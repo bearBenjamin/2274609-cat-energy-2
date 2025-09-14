@@ -30,7 +30,7 @@
 .slider-container__toggle {
   position: relative;
   top: 0;
-  left: 49%;
+  left: 49.4%;
   display: block;
   width: 4px;
   height: 100%;
@@ -39,7 +39,7 @@
   background-color: $special-grey-2;
 
   @media (min-width: $tablet-width) {
-    left: 49.5%;
+    left: 49.7%;
   }
 }
 
