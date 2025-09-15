@@ -1,8 +1,8 @@
 .description-cat-programs {
   padding-top: 20px;
   padding-bottom: 37px;
-  background-color: $basic-white;
   color: $basic-black;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
@@ -17,14 +17,14 @@
 
 .description-cat-programs__title {
   margin: 0;
-  margin-left: 1px;
   margin-bottom: 40px;
+  margin-left: 1px;
   line-height: 40px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
     margin-bottom: 32px;
+    margin-left: 0;
     line-height: 60px;
   }
 
@@ -34,19 +34,19 @@
 }
 
 .description-cat-programs__list {
+  display: flex;
   margin: 0;
   padding: 0;
-  list-style: none;
-  display: flex;
+  padding-left: 80px;
   flex-flow: column;
   gap: 20px;
-  padding-left: 80px;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
-    counter-reset: item-count;
     padding-left: 0;
     flex-flow: row wrap;
     gap: 35px 135px;
+    counter-reset: item-count;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,23 +61,23 @@
   margin-bottom: 4px;
   font-size: 14px;
   line-height: 18px;
-  overflow-wrap: break-word;
   color: $special-dark-grey;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
-    counter-increment: item-count 1;
     width: 249px;
     margin: 0;
     padding: 152px 0 57px;
     font-size: 16px;
     line-height: 24px;
+    counter-increment: item-count 1;
   }
 
   @media (min-width: $desktop-width) {
     width: 248px;
+    padding: 151px 0 57px;
     font-size: 16px;
     line-height: 24px;
-    padding: 151px 0 57px;
   }
 }
 
@@ -102,13 +102,13 @@
 
 .description-cat-programs__list-item::after {
   @media (min-width: $tablet-width) {
-    content: counter(item-count);
     position: absolute;
     top: 130px;
     left: 113px;
     font-family: "Oswald", sans-serif;
     font-size: 280px;
     color: $basic-grey;
+    content: counter(item-count);
   }
 }
 
@@ -123,8 +123,8 @@
   background-size: 30px 32px;
 
   @media (min-width: $desktop-width) {
-    background-size: 32px 32px;
     top: 40px;
+    background-size: 32px 32px;
   }
 }
 
@@ -146,9 +146,9 @@
   background-size: 27px 29px;
 
   @media (min-width: $desktop-width) {
-    background-size: 28px 29px;
     top: 40px;
     left: 1px;
+    background-size: 28px 29px;
   }
 }
 
@@ -164,9 +164,9 @@
   background-size: 25px 30px;
 
   @media (min-width: $desktop-width) {
-    background-size: 25px 31px;
     top: 40px;
     left: 2px;
+    background-size: 25px 31px;
   }
 }
 
@@ -185,14 +185,14 @@
   background-size: 27px 31px;
 
   @media (min-width: $desktop-width) {
-    background-size: 28px 31px;
     top: 40px;
     left: 3px;
+    background-size: 28px 31px;
   }
 }
 
 .description-cat-programs__content {
-  margin: 0;
   position: relative;
   z-index: 2;
+  margin: 0;
 }

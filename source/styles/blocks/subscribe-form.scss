@@ -1,13 +1,11 @@
-// .subscribe-form {}
-
 .subscribe-form__field {
   padding: 13px;
-  border: 1px solid $special-grey;
   font-family: $second-family;
   font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
   color: $special-dark-grey;
+  border: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
     width: 376px;
@@ -20,12 +18,12 @@
 
 .subscribe-form__button-submit {
   padding: 15px 82px;
-  border: none;
   font-size: 20px;
   line-height: 26px;
+  border: none;
 
   @media (min-width: $tablet-width) {
-    width: 256px;
     padding: 15px 70px;
+    width: 256px;
   }
 }

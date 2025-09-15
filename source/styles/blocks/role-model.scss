@@ -42,13 +42,13 @@
 .role-model__title {
   margin: 0;
   margin-bottom: 40px;
-  text-align: left;
   line-height: 40px;
+  text-align: left;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,18 +61,18 @@
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
-  overflow-wrap: break-word;
   color: $special-dark-grey;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 4px;
     margin-bottom: 69px;
+    padding-right: 4px;
   }
 }
 
@@ -84,8 +84,8 @@
   overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
-    gap: 43px;
     justify-content: normal;
+    gap: 43px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,18 +107,18 @@
   width: 186px;
 
   @media (min-width: $tablet-width) {
+    width: 174px;
     margin-left: auto;
     padding-top: 11px;
     padding-bottom: 17px;
-    width: 174px;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    width: 327px;
     margin-left: 1px;
     padding-top: 8px;
     padding-bottom: 0;
-    width: 327px;
-    display: flex;
     gap: 63px;
     text-align: center;
   }

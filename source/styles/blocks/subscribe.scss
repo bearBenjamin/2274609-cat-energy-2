@@ -1,7 +1,7 @@
 .subscribe {
   padding-bottom: 40px;
-  background-color: $basic-white;
   color: $basic-black;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     padding-top: 80px;
@@ -16,17 +16,17 @@
 
 .subscribe::before {
   content: "";
-  width: 100%;
-  display: block;
   position: relative;
   top: 51px;
   left: 212px;
+  display: block;
+  width: 100%;
   box-shadow: 0 0 0 2px $basic-green;
 
   @media (min-width: $tablet-width) {
-    width: 110%;
     top: 15px;
     left: -30px;
+    width: 110%;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,8 +36,8 @@
 
 .subscribe__title {
   position: relative;
-  margin: 0;
   max-width: 192px;
+  margin: 0;
   padding-top: 40px;
   padding-right: 40px;
   padding-bottom: 32px;
@@ -59,11 +59,11 @@
 
   &::before {
     content: "";
-    width: 60px;
-    height: 20px;
     position: absolute;
     top: 45px;
     left: -60px;
+    width: 60px;
+    height: 20px;
     background-color: $basic-white;
 
     @media (min-width: $tablet-width) {
@@ -93,14 +93,14 @@
   row-gap: 14px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 38px;
     padding-right: 38px;
+    padding-left: 38px;
     flex-direction: row;
     row-gap: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 496px 256px;
     padding: 0 234px;
+    grid-template-columns: 496px 256px;
   }
 }

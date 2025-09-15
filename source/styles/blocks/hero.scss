@@ -1,11 +1,13 @@
 .hero {
   color: $basic-black;
+  background-color: $basic-white;
 
   &::before {
     content: "";
     position: absolute;
-    left: 0;
     right: 0;
+    left: 0;
+    z-index: 0;
     width: 100%;
     height: 302px;
     background-color: rgb(104, 183, 56);
@@ -13,7 +15,6 @@
     background-repeat: no-repeat;
     background-size: auto, 320px 302px, auto;
     background-position: center center;
-    z-index: 0;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -21,10 +22,10 @@
 
     @media (min-width: $desktop-width) {
       content: "";
-      display: block;
       position: absolute;
       top: 0;
       left: 50%;
+      display: block;
       width: 50%;
       height: 693px;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index/hero-desktop-bg@2x.jpg"), linear-gradient(to right, #414778, 50%, #42425b 50%);
@@ -37,8 +38,8 @@
   padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
     display: grid;
+    padding-top: 65px;
     grid-template-columns: 1fr;
     grid-template-rows: 160px 70px 580px;
   }
@@ -52,23 +53,24 @@
 
 .hero__title {
   position: relative;
+  z-index: 1;
+  margin: 0;
+  margin-bottom: 25px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-bottom: 25px;
   text-align: center;
-  overflow-wrap: break-word;
   color: $basic-white;
-  z-index: 1;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     position: static;
     margin-top: 0;
+    margin-bottom: 40px;
     padding-left: 90px;
     padding-right: 202px;
-    margin-bottom: 40px;
-    text-align: left;
     font-size: 60px;
     line-height: 60px;
+    text-align: left;
     color: $basic-black;
   }
 
@@ -77,8 +79,8 @@
     margin-left: 80px;
     margin-bottom: 40px;
     padding-top: 109px;
-    padding-left: 0;
     padding-right: 0;
+    padding-left: 0;
     grid-column: 1/2;
     grid-row: 1/2;
   }
@@ -86,36 +88,36 @@
 
 .hero__slogan {
   position: relative;
+  z-index: 1;
   margin: 0;
+  margin-bottom: 29px;
   padding-left: 39px;
   padding-right: 42px;
-  margin-bottom: 29px;
   font-family: $second-family;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
-  overflow-wrap: break-word;
   color: $basic-white;
-  z-index: 1;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     position: static;
+    z-index: 0;
+    margin-bottom: 50px;
     padding-right: 307px;
     padding-left: 90px;
-    margin-bottom: 50px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     text-transform: uppercase;
     color: $basic-black;
-    z-index: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 283px;
-    margin-left: 80px;
     margin-bottom: 52px;
+    margin-left: 80px;
     padding: 0;
     grid-column: 1/2;
     grid-row: 2/2;
@@ -124,19 +126,19 @@
 
 .hero__image-wrapper {
   position: relative;
+  z-index: 1;
   width: 280px;
   height: auto;
   margin-bottom: 3px;
-  z-index: 1;
 
   @media (min-width: $tablet-width) {
     position: static;
+    z-index: 0;
     width: 709px;
     margin-top: -29px;
     margin-bottom: 0;
     grid-column: 1/-1;
     grid-row: 3/4;
-    z-index: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -157,19 +159,19 @@
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
-  overflow-wrap: break-word;
   color: $basic-white;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
+    z-index: 1;
+    margin-left: 90px;
     width: 242px;
     padding: 14px 26px;
-    margin-left: 90px;
     grid-column: 1/2;
     grid-row: 3/3;
     align-self: start;
     font-size: 20px;
     line-height: 26px;
-    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {

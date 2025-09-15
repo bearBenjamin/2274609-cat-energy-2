@@ -1,21 +1,21 @@
 .additional-product {
-  background-color: $basic-white;
   color: $basic-black;
+  background-color: $basic-white;
 }
 
 .additional-product::before {
   content: "";
   position: relative;
-  display: block;
-  width: 100%;
   top: 35px;
   left: 287px;
+  display: block;
+  width: 100%;
   box-shadow: 0 0 0 2px $basic-green;
 
   @media (min-width: $tablet-width) {
-    width: 110%;
     top: 90px;
     left: -30px;
+    width: 110%;
   }
 }
 
@@ -30,8 +30,8 @@
 
 .additional-product__title {
   position: relative;
-  margin: 0;
   max-width: 250px;
+  margin: 0;
   padding-top: 24px;
   padding-bottom: 37px;
   text-align: left;
@@ -55,27 +55,27 @@
 
 .additional-product__cards {
   position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: grid;
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+  padding-top: 11px;
+  padding-bottom: 17px;
+  list-style: none;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
   gap: 32px;
-  padding-top: 11px;
-  padding-bottom: 17px;
-  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 38px 28px;
     margin-bottom: 70px;
+    padding: 26px 38px 28px;
     gap: 54px;
     box-shadow: 0 0 0 1px #ebebeb;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0 17px;
     margin-bottom: 0;
+    padding: 15px 0 17px;
     grid-column: 1/1;
     grid-row: 2/2;
     gap: 32px;
@@ -84,10 +84,10 @@
 
   &::after {
     content: "";
-    width: 280px;
     position: absolute;
-    bottom: 0;
     right: 0;
+    bottom: 0;
+    width: 280px;
     box-shadow: 0 0 0 1px #ebebeb;
 
     @media (min-width: ($tablet-width)) {
@@ -121,10 +121,10 @@
 
   &::after {
     content: "";
-    width: 100%;
     position: absolute;
     top: -14px;
     left: 0;
+    width: 100%;
     box-shadow: 0 0 0 1px #ebebeb;
 
     @media (min-width: $tablet-width) {
@@ -133,11 +133,11 @@
 
     @media (min-width: $desktop-width) {
       content: "";
-      width: 100%;
-      display: block;
       position: absolute;
       top: -16px;
       left: 0;
+      display: block;
+      width: 100%;
       box-shadow: 0 0 0 1px #ebebeb;
     }
   }
@@ -146,11 +146,11 @@
 .additional-product-card:last-child::before {
   @media (min-width: $desktop-width) {
     content: "";
-    width: 100%;
-    display: block;
     position: absolute;
     top: 56px;
     left: 0;
+    display: block;
+    width: 100%;
     box-shadow: 0 0 0 1px #ebebeb;
   }
 }
@@ -159,6 +159,7 @@
   position: relative;
   width: 100%;
   padding: 187px 61px 43px 58px;
+  background-color: #68b738;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog/mobile-bg@2x.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -190,19 +191,18 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 82px;
-
     top: 55px;
     left: 77px;
     transform: none;
+    width: 80px;
+    height: 82px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 83px;
-    background-size: 80px 83px;
     left: 50%;
     transform: translateX(-50%);
+    height: 83px;
+    background-size: 80px 83px;
   }
 }
 

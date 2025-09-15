@@ -1,6 +1,6 @@
 .page-main {
-  background-color: $basic-white;
   color: $basic-black;
+  background-color: $basic-white;
 }
 
 .page-main::before {
@@ -32,6 +32,7 @@
 
 .page-main__title {
   position: relative;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

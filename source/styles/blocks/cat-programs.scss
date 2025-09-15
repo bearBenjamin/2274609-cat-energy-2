@@ -1,7 +1,7 @@
 .cat-programs {
-  background-color: $basic-white;
-  color: $basic-black;
   padding-top: 20px;
+  color: $basic-black;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -13,13 +13,12 @@
 }
 
 .cat-programs__list {
+  display: flex;
   margin: 0;
   padding: 0;
-  list-style: none;
-
-  display: flex;
   flex-flow: column wrap;
   gap: 20px;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     gap: 30px;
@@ -59,8 +58,8 @@
   left: 20px;
   width: 50px;
   height: 50px;
-  border-radius: 50%;
   background-color: $basic-green;
+  border-radius: 50%;
 
   @media (min-width: $tablet-width) {
     top: 92px;
@@ -134,23 +133,23 @@
 .cat-programs__item-title {
   max-width: 150px;
   margin: 0;
-  margin-left: 70px;
   margin-bottom: 29px;
+  margin-left: 70px;
   line-height: 37px;
   text-align: left;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     max-width: 270px;
-    margin-left: 1px;
     margin-bottom: 24px;
+    margin-left: 1px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 162px;
     margin-bottom: 73px;
+    margin-left: 162px;
   }
 }
 
@@ -161,8 +160,8 @@
   margin-bottom: 42px;
   font-size: 14px;
   line-height: 18px;
-  overflow-wrap: break-word;
   color: $special-dark-grey;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     max-width: 350px;

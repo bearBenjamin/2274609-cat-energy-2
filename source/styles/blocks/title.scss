@@ -1,11 +1,10 @@
 .title {
   font-family: $second-family;
-  margin: 0;
   font-size: 36px;
-  font-weight: 400;
   line-height: 36px;
-  overflow-wrap: break-word;
+  font-weight: 400;
   color: $basic-black;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;

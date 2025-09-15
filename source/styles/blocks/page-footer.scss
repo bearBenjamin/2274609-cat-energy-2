@@ -1,7 +1,7 @@
 .page-footer {
   padding: 40px 0;
-  background-color: $basic-grey;
   color: $basic-black;
+  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     padding: 55px 0;
@@ -73,16 +73,16 @@
 }
 
 .page-footer__social-list {
+  display: flex;
+  width: 132px;
   margin: 0;
   padding: 0;
-  list-style: none;
   grid-row: 2/2;
-  display: flex;
   flex-wrap: wrap;
-  width: 132px;
   gap: 24px;
   justify-content: center;
   align-items: center;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     grid-column: 4/4;
@@ -96,18 +96,18 @@
 }
 
 .page-footer__developer-contact {
-  grid-row: 3/3;
   display: flex;
-  flex-wrap: wrap;
   width: 280px;
+  grid-row: 3/3;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    grid-column: 6/6;
-    grid-row: 1/1;
     width: 163px;
     height: 37px;
+    grid-column: 6/6;
+    grid-row: 1/1;
   }
 }
 

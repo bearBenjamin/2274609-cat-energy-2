@@ -1,13 +1,13 @@
 .catalog-product {
-  background-color: $basic-white;
   color: $basic-black;
+  background-color: $basic-white;
 }
 
 .catalog-product__cards {
+  display: grid;
   margin: 0 auto;
   padding: 0;
   list-style: none;
-  display: grid;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 324px 324px;

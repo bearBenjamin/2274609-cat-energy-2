@@ -43,15 +43,15 @@
 
 .additional-product-card__description-list {
   margin: 0;
-  padding: 0;
   margin-bottom: 15px;
-  list-style: none;
+  padding: 0;
   grid-column: 1/1;
   grid-row: 3/3;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
-    grid-area: 1/2/1/-1;
     margin-bottom: 0;
+    grid-area: 1/2/1/-1;
   }
 
   @media (min-width: $desktop-width) {

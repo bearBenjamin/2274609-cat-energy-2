@@ -1,19 +1,20 @@
 const mainNav = document.querySelector('.main-nav__list');
-const navToggle = document.querySelector('.main-header__button');
-const navToggleText = document.querySelector('.button-toggle__text');
+const btnToggle = document.querySelector('.main-header__button');
+const btnToggleText = document.querySelector('.button-toggle__text');
 
 mainNav.classList.remove('main-nav__list--nojs');
+btnToggle.classList.remove('main-header__button--nojs');
 
-navToggle.addEventListener('click', () => {
+btnToggle.addEventListener('click', () => {
   if (mainNav.classList.contains('main-nav__list--close')) {
     mainNav.classList.remove('main-nav__list--close');
     mainNav.classList.add('main-nav__list--open');
-    navToggle.classList.remove('main-header__button--close');
-    navToggleText.textContent = 'Открыть меню';
+    btnToggle.classList.remove('main-header__button--close');
+    btnToggleText.textContent = 'Открыть меню';
   } else {
     mainNav.classList.add('main-nav__list--close');
     mainNav.classList.remove('main-nav__list--open');
-    navToggle.classList.add('main-header__button--close');
-    navToggleText.textContent = 'Закрыть меню';
+    btnToggle.classList.add('main-header__button--close');
+    btnToggleText.textContent = 'Закрыть меню';
   }
 });

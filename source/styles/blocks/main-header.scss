@@ -10,7 +10,6 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 55px;
-    //padding-bottom: 82px;
   }
 }
 
@@ -23,9 +22,8 @@
   margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-    //margin-right: 3px;
     display: flex;
+    margin-bottom: 0;
     gap: 93px;
   }
 
@@ -54,6 +52,10 @@
     background-size: 20px 24px;
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  &--nojs {
+    background-image: none;
   }
 }
 
