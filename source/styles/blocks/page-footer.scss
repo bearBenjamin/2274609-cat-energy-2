@@ -1,7 +1,7 @@
 .page-footer {
   padding: 40px 0;
-  background-color: $basic-grey;
   color: $basic-black;
+  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     padding: 55px 0;
@@ -12,19 +12,22 @@
   }
 }
 
-.page-footer__grid {
+.page-footer__container {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: max-content 40px max-content 40px max-content;
+  grid-template-rows: 23px 23px auto;
   place-items: center;
+  gap: 40px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: auto max-content 160px max-content 120px max-content auto;
+    grid-template-columns: auto max-content 160px max-content 126px max-content auto;
     grid-template-rows: 37px;
+    gap: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: auto max-content 416px max-content 376px max-content auto;
+    grid-template-columns: auto 128px 416px 132px 378px 168px auto;
   }
 }
 
@@ -37,20 +40,49 @@
   }
 }
 
+.page-footer__container::before {
+  content: "";
+  position: absolute;
+  top: 44px;
+  left: 20px;
+  width: 280px;
+  box-shadow: 0 0 0 1 #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-footer__container::after {
+  content: "";
+  position: absolute;
+  bottom: 54px;
+  right: 20px;
+  width: 280px;
+  box-shadow: 0 0 0 1 #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .page-footer__logo-text {
   display: block;
+  width: 128px;
+  height: 27px;
 }
 
 .page-footer__social-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  grid-row: 3/3;
   display: flex;
   width: 132px;
+  margin: 0;
+  padding: 0;
+  grid-row: 2/2;
+  flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
   align-items: center;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     grid-column: 4/4;
@@ -64,17 +96,18 @@
 }
 
 .page-footer__developer-contact {
-  grid-row: 5/5;
   display: flex;
   width: 280px;
+  grid-row: 3/3;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    width: 163px;
+    height: 37px;
     grid-column: 6/6;
     grid-row: 1/1;
-    width: 168px;
-    height: 37px;
   }
 }
 
@@ -82,8 +115,11 @@
   font-size: 16px;
   line-height: 20px;
   color: $special-dark-grey;
+  letter-spacing: 0.3px;
 }
 
-.page-footer__logo-developer {
+.page-footer__logo-developer use {
   display: block;
+  width: 27px;
+  height: 34px;
 }

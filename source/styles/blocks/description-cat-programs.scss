@@ -1,80 +1,90 @@
 .description-cat-programs {
-  background-color: $basic-white;
+  padding-top: 20px;
+  padding-bottom: 37px;
   color: $basic-black;
-}
-
-.description-cat-programs__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    padding-top: 45px;
+    padding-bottom: 47px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    padding-top: 71px;
+    padding-bottom: 69px;
   }
 }
 
 .description-cat-programs__title {
   margin: 0;
-  margin-left: 1px;
   margin-bottom: 40px;
+  margin-left: 1px;
   line-height: 40px;
   text-align: left;
 
   @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
     margin-bottom: 32px;
+    margin-left: 0;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
   }
 }
 
 .description-cat-programs__list {
+  display: flex;
   margin: 0;
   padding: 0;
-  list-style: none;
-  display: flex;
+  padding-left: 80px;
   flex-flow: column;
   gap: 20px;
-  padding-left: 80px;
-  margin-bottom: 49px;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     padding-left: 0;
     flex-flow: row wrap;
-    gap: 37px 156px;
-    margin-bottom: 92px;
+    gap: 35px 135px;
+    counter-reset: item-count;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 0;
-    margin-bottom: 69px;
+    gap: 76px;
   }
 }
 
 .description-cat-programs__list-item {
   position: relative;
+  width: 200px;
+  margin-top: 2px;
+  margin-bottom: 4px;
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
-    width: 227px;
-    padding: 141px 13px 47px 0;
+    width: 249px;
+    margin: 0;
+    padding: 152px 0 57px;
+    font-size: 16px;
+    line-height: 24px;
+    counter-increment: item-count 1;
   }
 
   @media (min-width: $desktop-width) {
+    width: 248px;
+    padding: 151px 0 57px;
     font-size: 16px;
     line-height: 24px;
-    padding: 151px 0 57px;
   }
 }
 
 .description-cat-programs__list-item::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: -2px;
   left: -80px;
   width: 60px;
   height: 60px;
@@ -83,66 +93,106 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    top: 40px;
+    width: 80px;
+    height: 80px;
+    top: 41px;
     left: 0;
   }
 }
 
-.description-cat-programs__list-item--one {
+.description-cat-programs__list-item::after {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 130px;
+    left: 113px;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    color: $basic-grey;
+    content: counter(item-count);
+  }
+}
+
+.description-cat-programs__list-item-one {
   @media (min-width: $desktop-width) {
-    width: 230px;
     padding-right: 26px;
-    margin-right: 94px;
   }
 }
 
-.description-cat-programs__list-item--one::before {
-  background-image: url("../../icons/icon-leaf.svg");
+.description-cat-programs__list-item-one::before {
+  background-image: url("../../icons/stack.svg#icon-leaf");
   background-size: 30px 32px;
+
+  @media (min-width: $desktop-width) {
+    top: 40px;
+    background-size: 32px 32px;
+  }
 }
 
-.description-cat-programs__list-item--two {
+.description-cat-programs__list-item-one::after {
+  @media (min-width: $tablet-width) {
+    top: 130px;
+    left: 119px;
+  }
+}
+
+.description-cat-programs__list-item-two {
   @media (min-width: $desktop-width) {
-    width: 246px;
     padding-right: 22px;
-    margin-right: 79px;
   }
 }
 
-.description-cat-programs__list-item--two::before {
-  background-image: url("../../icons/icon-powder.svg");
+.description-cat-programs__list-item-two::before {
+  background-image: url("../../icons/stack.svg#icon-powder");
   background-size: 27px 29px;
-}
 
-.description-cat-programs__list-item--three {
   @media (min-width: $desktop-width) {
-    width: 248px;
-    padding-right: 41px;
-    margin-right: 77px;
+    top: 40px;
+    left: 1px;
+    background-size: 28px 29px;
   }
 }
 
-.description-cat-programs__list-item--three::before {
-  background-image: url("../../icons/icon-eat.svg");
-  background-size: 25px 30px;
+.description-cat-programs__list-item-three {
+  @media (min-width: $desktop-width) {
+    padding-right: 41px;
+    padding-left: 1px;
+  }
 }
 
-.description-cat-programs__list-item--four {
+.description-cat-programs__list-item-three::before {
+  background-image: url("../../icons/stack.svg#icon-eat");
+  background-size: 25px 30px;
+
   @media (min-width: $desktop-width) {
-    width: 246px;
+    top: 40px;
+    left: 2px;
+    background-size: 25px 31px;
+  }
+}
+
+.description-cat-programs__list-item-four {
+  @media (min-width: $desktop-width) {
+    padding-left: 2px;
   }
 }
 
 .description-cat-programs__content span {
   display: inline-block;
-  margin-left: 1px;
 }
 
-.description-cat-programs__list-item--four::before {
-  background-image: url("../../icons/icon-mass.svg");
+.description-cat-programs__list-item-four::before {
+  background-image: url("../../icons/stack.svg#icon-mass");
   background-size: 27px 31px;
+
+  @media (min-width: $desktop-width) {
+    top: 40px;
+    left: 3px;
+    background-size: 28px 31px;
+  }
 }
 
 .description-cat-programs__content {
+  position: relative;
+  z-index: 2;
   margin: 0;
 }

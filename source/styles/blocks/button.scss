@@ -4,11 +4,16 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  background-color: $basic-green;
   color: $basic-white;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .button--show {
-  background-color: $basic-grey;
   color: $special-dark-grey;
+  background-color: $basic-grey;
 }

@@ -1,107 +1,151 @@
 .hero {
-  width: 100%;
-  background-color: $basic-white;
   color: $basic-black;
+  background-color: $basic-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 302px;
+    background-color: rgb(104, 183, 56);
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index/hero-mobile-bg@2x.jpg"), linear-gradient(to right, #414778 50%, #42425b 50%);
+    background-repeat: no-repeat;
+    background-size: auto, 320px 302px, auto;
+    background-position: center center;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      display: block;
+      width: 50%;
+      height: 693px;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index/hero-desktop-bg@2x.jpg"), linear-gradient(to right, #414778, 50%, #42425b 50%);
+      background-size: auto, 720px 694px;
+    }
+  }
 }
 
 .hero__inner {
-  width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 280px;
-  justify-content: center;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index/hero-mobile-bg@2x.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: 320px 302px;
+  padding-top: 27px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
+    display: grid;
     padding-top: 65px;
-    background-image: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: 160px 70px 580px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 55px;
-    grid-template-columns: 557px 557px 1fr;
-    grid-template-rows: 59px 29px 81px 120px 40px 20px 52px 54px 184px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index/hero-desktop-bg@1x.jpg");
-    background-position: top right;
-    background-size: 720px 694px;
-    background-repeat: no-repeat;
+    padding-top: 0;
+    grid-template-columns: 447px auto;
+    grid-template-rows: 269px 72px 238px;
   }
 }
 
 .hero__title {
-  margin-top: 27px;
+  position: relative;
+  z-index: 1;
+  margin: 0;
   margin-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
   color: $basic-white;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
-    width: 416px;
+    position: static;
     margin-top: 0;
-    margin-left: 90px;
     margin-bottom: 40px;
-    grid-column: 1;
-    grid-row: 1;
-    text-align: left;
+    padding-left: 90px;
+    padding-right: 202px;
     font-size: 60px;
     line-height: 60px;
+    text-align: left;
     color: $basic-black;
   }
 
   @media (min-width: $desktop-width) {
-    grid-area: 4/1/-1/2;
-    margin-left: 190px;
+    width: 416px;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    padding-top: 109px;
+    padding-right: 0;
+    padding-left: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 }
 
 .hero__slogan {
+  position: relative;
+  z-index: 1;
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
+  padding-left: 39px;
+  padding-right: 42px;
   font-family: $second-family;
   font-size: 14px;
   line-height: 14px;
-  grid-column: 1/-1;
-  grid-row: 2;
   text-transform: uppercase;
   text-align: center;
   color: $basic-white;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
-    width: 283px;
-    margin-left: 90px;
+    position: static;
+    z-index: 0;
     margin-bottom: 50px;
+    padding-right: 307px;
+    padding-left: 90px;
     font-size: 20px;
     line-height: 20px;
+    text-align: left;
     text-transform: uppercase;
     color: $basic-black;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 190px;
-    grid-area: 6/1;
+    width: 283px;
+    margin-bottom: 52px;
+    margin-left: 80px;
+    padding: 0;
+    grid-column: 1/2;
+    grid-row: 2/2;
   }
 }
 
 .hero__image-wrapper {
-  display: block;
+  position: relative;
+  z-index: 1;
   width: 280px;
   height: auto;
   margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
+    position: static;
+    z-index: 0;
     width: 709px;
-    margin-top: -50px;
+    margin-top: -29px;
     margin-bottom: 0;
+    grid-column: 1/-1;
+    grid-row: 3/4;
   }
 
   @media (min-width: $desktop-width) {
     width: 552px;
-    margin-top: 0;
-    grid-area: 3/2/9/3;
+    margin-top: 28px;
+    grid-column: 2/2;
+    grid-row: 1/3;
   }
 }
 
@@ -111,74 +155,31 @@
 
 .hero__link-programs {
   display: block;
-  width: 100%;
+  padding: 10px 64px;
   margin: 0 auto;
   text-align: center;
   text-decoration: none;
   color: $basic-white;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
-    width: 242px;
+    z-index: 1;
     margin-left: 90px;
-    grid-column: 1/-1;
+    width: 242px;
+    padding: 14px 26px;
+    grid-column: 1/2;
     grid-row: 3/3;
+    align-self: start;
+    font-size: 20px;
+    line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 190px;
-    grid-area: 8/1/8/-1;
+    margin-left: 80px;
+    padding: 14px 26px;
+    grid-column: 1/2;
+    grid-row: 3/3;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
-
-/* @media (min-width: $desktop-width) {
-  .hero {
-    padding: 0;
-  }
-
-  .hero--grid {
-    grid-column: 1/-1;
-    grid-row: 1/-1;
-  }
-
-  .hero__inner {
-    max-width: 1440px;
-    padding-top: 0;
-    display: grid;
-    grid-template-columns: 557px 1fr 1fr;
-    grid-template-rows: 344px auto auto;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index/hero-desktop-bg@1x.jpg");
-    background-position: top right;
-    background-size: 720px 694px;
-    background-repeat: no-repeat;
-  }
-
-  .hero__title {
-    grid-column: 1;
-    grid-row: 1;
-    margin-top: 224px;
-    margin-left: 190px;
-    margin-bottom: 0;
-  }
-
-  .hero__slogan {
-    grid-column: 1;
-    grid-row: 2;
-    margin-top: 40px;
-    margin-left: 190px;
-    margin-bottom: 0;
-  }
-
-  .hero__link-programs {
-    position: static;
-    grid-column: 1;
-    grid-row: 3;
-    margin-top: 52px;
-    margin-left: 190px;
-    margin-bottom: 184px;
-  }
-
-  .hero__image {
-    grid-column: 2;
-    margin-top: 143px;
-  }
-} */

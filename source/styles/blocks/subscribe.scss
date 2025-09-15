@@ -1,37 +1,74 @@
 .subscribe {
-  background-color: $basic-white;
+  padding-bottom: 40px;
   color: $basic-black;
-}
-
-.subscribe__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    padding-top: 80px;
+    padding-bottom: 78px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    padding-top: 96px;
+    padding-bottom: 102px;
+  }
+}
+
+.subscribe::before {
+  content: "";
+  position: relative;
+  top: 51px;
+  left: 212px;
+  display: block;
+  width: 100%;
+  box-shadow: 0 0 0 2px $basic-green;
+
+  @media (min-width: $tablet-width) {
+    top: 15px;
+    left: -30px;
+    width: 110%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 19px;
   }
 }
 
 .subscribe__title {
+  position: relative;
+  max-width: 192px;
   margin: 0;
   padding-top: 40px;
+  padding-right: 40px;
   padding-bottom: 32px;
   text-align: left;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
-    padding-top: 80px;
+    max-width: 282px;
+    padding-top: 0;
     padding-bottom: 66px;
     padding-left: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 96px;
+    max-width: 333px;
+    margin-left: -40px;
     padding-bottom: 72px;
-    padding-left: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: -60px;
+    width: 60px;
+    height: 20px;
+    background-color: $basic-white;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -51,21 +88,19 @@
 }
 
 .subscribe__form {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: max-content 16px max-content;
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 375px 256px;
-    grid-template-rows: max-content;
-    padding: 0 38px;
-    margin-bottom: 80px;
+    padding-right: 38px;
+    padding-left: 38px;
+    flex-direction: row;
+    row-gap: 0;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 496px 256px;
     padding: 0 234px;
-    margin-bottom: 104px;
+    grid-template-columns: 496px 256px;
   }
 }

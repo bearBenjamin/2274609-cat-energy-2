@@ -1,71 +1,71 @@
 .main-header {
+  padding-top: 13px;
   color: $basic-black;
   background-color: $basic-white;
 
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
-    // display: grid;
-    // grid-template-columns: 50% 50%;
-    // grid-template-rows: 114px 580px;
-    // justify-content: center;
-    // padding-bottom: 82px;
+    padding-top: 55px;
   }
 }
 
 .main-header__container {
   position: relative;
-  display: flex;
-  align-items: center;
-  width: 280px;
-  margin: 0 auto;
-  padding-top: 13px;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 704px;
-    padding-top: 25px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-    padding-top: 55px;
-  }
 }
 
 .main-header__nav {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: relative;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
+    margin-bottom: 0;
+    gap: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 538px;
   }
 }
 
 .main-header__button {
   position: absolute;
-  top: 20px;
-  right: 0;
+  top: 7px;
+  right: 21px;
+  background-image: url("../../icons/stack.svg#logo-button-open");
+  background-size: 24px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     display: none;
   }
+
+  &--close {
+    top: 5px;
+    right: 17px;
+    background-image: url("../../icons/stack.svg#logo-button-close");
+    background-size: 20px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--nojs {
+    background-image: none;
+  }
 }
 
-.main-header__hero {
-  display: grid;
-  justify-content: center;
+/* .main-header__hero {
+  // display: grid;
+  // justify-content: center;
 
-  margin-bottom: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
+  //@media (min-width: $tablet-width) {}
 
   @media (min-width: $desktop-width) {
-    margin-top: -118px;
-    padding-bottom: 82px;
-    justify-content: normal;
+    margin-top: -114px;
   }
-}
+} */

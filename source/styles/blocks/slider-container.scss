@@ -1,5 +1,3 @@
-// .slider-container {}
-
 .slider-container__inner {
   position: absolute;
   top: 0;
@@ -14,12 +12,12 @@
 }
 
 .slider-container__inner--before {
-  width: 50%;
   z-index: 1;
+  width: 50%;
   background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to bottom, $basic-white 0, $basic-white 166px, #eaeaea 166px);
+    background: linear-gradient(to bottom, $basic-white 0, $basic-white 151px, #eaeaea 151px);
   }
 
   @media (min-width: $desktop-width) {
@@ -30,13 +28,17 @@
 .slider-container__toggle {
   position: relative;
   top: 0;
-  left: 50%;
+  left: 49.4%;
+  z-index: 1;
   display: block;
   width: 4px;
   height: 100%;
-  z-index: 1;
-  cursor: pointer;
   background-color: $special-grey-2;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    left: 49.7%;
+  }
 }
 
 .slider-container__toggle::before {
@@ -47,9 +49,9 @@
   transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
+  background-color: $basic-white;
   border: 2px solid $special-grey-2;
   border-radius: 50%;
-  background-color: $basic-white;
 }
 
 .slider-container__toggle::after {
@@ -61,7 +63,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $special-grey-2;
-  mask-image: url("../../icons/slider-arows.svg");
+  mask-image: url("../../icons/stack.svg#slider-arows");
   mask-size: cover;
   mask-position: center;
   mask-repeat: no-repeat;

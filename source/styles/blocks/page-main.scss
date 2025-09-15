@@ -1,30 +1,39 @@
 .page-main {
-  background-color: $basic-white;
   color: $basic-black;
+  background-color: $basic-white;
+}
+
+.page-main::before {
+  content: "";
+  position: relative;
+  display: block;
+  width: 100%;
+  box-shadow: 0 0 0 1 #d9d9d9, 0 105px 0 1 $special-grey-1, 0 314px 0 1 $special-grey-1, 0 523px 0 1 $special-grey-1, 0 732px 0 1 $special-grey-1, 0 941px 0 1 $special-grey-1, 0 1150px 0 1 $special-grey-1, 0 1359px 0 1 $special-grey-1, 0 1568px 0 1 $special-grey-1, 0 1775px 0 1 $special-grey-1;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .page-main__title-wrapper {
-  width: 280px;
-  margin: 0 auto;
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 41px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    margin: 0 auto;
     padding-top: 65px;
     padding-bottom: 84px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    margin: 0 auto;
-    padding-top: 74px;
+    padding-top: 73px;
     padding-bottom: 84px;
   }
 }
 
 .page-main__title {
+  position: relative;
+  margin: 0;
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;

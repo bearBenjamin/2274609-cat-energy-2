@@ -16,23 +16,27 @@
 <body class="page__body">
 
   <header class="main-header">
-    <div class="main-header__container">
+    <div class="main-header__container wrapper">
       <nav class="main-header__nav main-nav">
         <a class="main-nav__logo" href="#">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/logo-dekstop.svg" width="70" height="59" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-            <img class="main-nav__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип компании">
-          </picture>
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/logo-text-tablet.svg" width="118" height="21" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
-            <img class="main-nav__logo-text" src="images/logo-tekst.svg" width="101" height="18" alt="Название компании Cat Energy">
-          </picture>
+          <div class="main-nav__logo-image-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/logo-dekstop.svg" width="70" height="59" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+              <img class="main-nav__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип компании">
+            </picture>
+          </div>
+          <div class="main-nav__logo-text-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/logo-text-tablet.svg" width="118" height="21" type="image/svg+xml">
+              <source media="(min-width: 768px)" srcset="images/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+              <img class="main-nav__logo-text" src="images/logo-2.svg" width="101" height="18" alt="Название компании Cat Energy">
+            </picture>
+          </div>
         </a>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list main-nav__list--nojs">
           <li class="main-nav__list-item main-nav__list-item--current">
-            <a class="main-nav__list-link" href="#">Главная</a>
+            <a class="main-nav__list-link main-nav__list-link--current" href="#">Главная</a>
           </li>
           <li class="main-nav__list-item">
             <a class="main-nav__list-link" href="catalog.html">Каталог продукции</a>
@@ -42,12 +46,15 @@
           </li>
         </ul>
       </nav>
-      <button class="main-header__button button-toggle button-toggle--current button-toggle--open" type="button">
+      <button class="main-header__button main-header__button--nojs button-toggle" type="button">
+        <noscript>
+          <span class="visually-hidden">Отключен JS</span>
+        </noscript>
         <span class="button-toggle__text visually-hidden">Открыть меню</span>
       </button>
     </div>
     <article class="main-header__hero hero">
-      <div class="hero__inner">
+      <div class="hero__inner wrapper">
         <h1 class="title hero__title">Функциональное питание для котов</h1>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <div class="hero__image-wrapper">
@@ -64,45 +71,45 @@
 
   <main class="main-container">
     <section class="cat-programs">
-      <div class="cat-programs__wrapper">
+      <div class="wrapper">
         <h2 class="visually-hidden">Программы тренировок</h2>
         <ul class="cat-programs__list">
           <li class="cat-programs__list-item cat-programs__list-item--slim">
             <h3 class="title-secondary cat-programs__item-title">Похудение</h3>
             <p class="cat-programs__item-content">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="cat-programs__item-link" href="form-programs.html">Каталог slim</a>
+            <a class="cat-programs__item-link cat-programs__item-link-slim" href="form-programs.html">Каталог slim</a>
           </li>
           <li class="cat-programs__list-item cat-programs__list-item--pro">
             <h3 class="title-secondary cat-programs__item-title">Набор массы</h3>
             <p class="cat-programs__item-content">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="cat-programs__item-link" href="form-programs.html">Каталог pro</a>
+            <a class="cat-programs__item-link cat-programs__item-link-pro" href="form-programs.html">Каталог pro</a>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="description-cat-programs">
-      <div class="description-cat-programs__wrapper">
+      <div class="wrapper">
         <h2 class="title description-cat-programs__title">Как это работает</h2>
         <ol class="description-cat-programs__list">
-          <li class="description-cat-programs__list-item description-cat-programs__list-item--one">
+          <li class="description-cat-programs__list-item description-cat-programs__list-item-one">
             <p class="description-cat-programs__content">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
           </li>
-          <li class="description-cat-programs__list-item description-cat-programs__list-item--two">
+          <li class="description-cat-programs__list-item description-cat-programs__list-item-two">
             <p class="description-cat-programs__content">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
           </li>
-          <li class="description-cat-programs__list-item description-cat-programs__list-item--three">
+          <li class="description-cat-programs__list-item description-cat-programs__list-item-three">
             <p class="description-cat-programs__content">
               Замените один-два приема
               обычной еды на наше
               функциональное питание.
             </p>
           </li>
-          <li class="description-cat-programs__list-item description-cat-programs__list-item--four">
+          <li class="description-cat-programs__list-item description-cat-programs__list-item-four">
             <p class="description-cat-programs__content">Уже через месяц наслаждайтесь изменениями к лучшему <span>вашего питомца!</span>
             </p>
           </li>
@@ -111,24 +118,24 @@
     </section>
 
     <section class="role-model">
-      <div class="role-model__wrapper">
+      <div class="role-model__wrapper wrapper">
         <div class="role-model__inner role-model-inner">
-          <!-- <div class="role-model-inner__content role-model-inner-content"> -->
+
           <h2 class="title role-model__title">Живой пример</h2>
           <p class="role-model__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <!-- </div> -->
+
           <div class="role-model__date">
             <div class="role-model__date-container role-model-date-container">
               <p class="role-model-date-container__date">5 кг</p>
-              <p class="role-model-date-container__description">снижение веса</p>
+              <p class="role-model-date-container__description role-model-date-container__description-mass">снижение веса</p>
             </div>
             <div class="role-model__date-container role-model-date-container">
               <p class="role-model-date-container__date">60 дней</p>
-              <p class="role-model-date-container__description">затрачено времени</p>
+              <p class="role-model-date-container__description role-model-date-container__description-time">затрачено времени</p>
             </div>
             <div class="role-model__price-container role-model-price-container">
               <p class="role-model-price-container__price-description">Затраты на питание:</p>
-              <p class="role-model-price-container__price-total-sum">15000 руб.</p>
+              <p class="role-model-price-container__price-total-sum">15 000 руб.</p>
             </div>
           </div>
         </div>
@@ -151,7 +158,7 @@
     </section>
 
     <section class="contact">
-      <div class="contact__wrapper">
+      <div class="contact__wrapper wrapper">
         <div class="contact__content-container">
           <h2 class="visually-hidden">Контакты</h2>
           <p class="contact__slogan">Приглашаем<br> к сотрудничеству дилеров!</p>
@@ -160,19 +167,21 @@
             <span>Санкт-Петербург</span>
           </address>
         </div>
-        <div class="contact__map-container">
-          <picture>
-            <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-dekstop@1x.png 1x, images/map-dekstop@2x.png 2x">
-            <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-            <img class="contact__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Cat Energy на карте города">
-          </picture>
-        </div>
       </div>
+      <div class="contact__map-container">
+        <picture>
+          <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-dekstop@1x.png 1x, images/map-dekstop@2x.png 2x">
+          <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="contact__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png" width="320" height="362" alt="Cat Energy на карте города">
+        </picture>
+        <iframe class="contact__map-yandex" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae79877a2fb6a7c3cc64abce798a42e9704626f68de5ea9ac3805ad1f6dbfb003&amp;source=constructor" width="360" height="362"></iframe>
+      </div>
+
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__grid">
+    <div class="page-footer__container wrapper">
       <a class="page-footer__logo" href="index.html">
         <img class="page-footer__logo-text" src="images/logo-tekst.svg" width="128" height="24" alt="Название компании Cat Energy">
       </a>
@@ -195,17 +204,8 @@
       </ul>
       <a class="page-footer__developer-contact" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="page-footer__name-developer">HTMLAcademy</span>
-        <!-- <img class="developer-contact__logo-developer" src="#" width="27" height="34" alt="Логотип HTML-Academy"> -->
-        <!-- не забыть заменить на картинку через спрайт и use -->
-        <svg class="page-footer__logo-developer" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
-          <g clip-path="url(#logo)">
-            <path fill="#666" d="M13.64.02 13.5 0 0 1.4v24.61L13.5 34 27 26.01V1.41L13.64 0Zm11.6 25L13.5 31.96 1.77 25.02v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83V16.9l3.62-2.15v10.26Zm0-11.57L22 15.33l-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19L1.8 13.58l11.63-6.96 11.8 6.83Zm0-1.22L13.43 5.3 1.77 12.22V2.99L13.5 1.76 25.23 3v9.24Z" />
-          </g>
-          <defs>
-            <clippath id="logo">
-              <path fill="#fff" d="M0 0h27v34H0z" />
-            </clippath>
-          </defs>
+        <svg class="page-footer__logo-developer" viewBox="0 0 27 34" width="27" height="34">
+          <use href="../icons/stack.svg#footer-logo-htmlacademy"></use>
         </svg>
         <span class="visually-hidden">Логотип htmlAcademy</span>
       </a>

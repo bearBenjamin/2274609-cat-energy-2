@@ -1,6 +1,6 @@
 .footer-social-list-item {
-  background-color: $basic-grey;
   color: $basic-black;
+  background-color: $basic-grey;
 }
 
 .footer-social-list-item__link {
@@ -18,7 +18,7 @@
   height: 100%;
   padding: 3px 0 2px 1px;
   background-color: $special-grey-2;
-  mask-image: url("../../icons/footer-vkontakte.svg");
+  mask-image: url("../../icons/stack.svg#footer-vkontakte");
   mask-size: 27px 22px;
   mask-repeat: no-repeat;
   mask-position: bottom;
@@ -31,7 +31,7 @@
   height: 100%;
   padding: 2px 2px 1px;
   background-color: $special-grey-2;
-  mask-image: url("../../icons/footer-youtube.svg");
+  mask-image: url("../../icons/stack.svg#footer-youtube");
   mask-size: 25px 20px;
   mask-repeat: no-repeat;
   mask-position: bottom;
@@ -44,7 +44,7 @@
   height: 100%;
   padding: 3px 4px 2px;
   background-color: $special-grey-2;
-  mask-image: url("../../icons/footer-telegram.svg");
+  mask-image: url("../../icons/stack.svg#footer-telegram");
   mask-size: 20px 20px;
   mask-repeat: no-repeat;
   mask-position: bottom;

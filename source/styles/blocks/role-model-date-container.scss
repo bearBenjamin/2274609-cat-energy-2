@@ -1,25 +1,38 @@
 .role-model-date-container {
   text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px $special-grey;
 }
 
 .role-model-date-container__date {
   margin: 0;
+  padding-top: 15px;
+  padding-bottom: 16px;
   font-family: $second-family;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 20px;
     font-size: 30px;
     line-height: 37px;
-    margin-bottom: 11px;
   }
 }
 
 .role-model-date-container__description {
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 0;
+  padding-left: 16px;
+  padding-right: 19px;
   font-size: 12px;
   line-height: 12px;
   color: $special-dark-grey;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -27,33 +40,42 @@
   }
 }
 
-.role-model-price-container__price-description,
-.role-model-price-container__price-total-sum {
-  margin: 0;
-  display: inline;
-  font-family: $second-family;
-  font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
+.role-model-date-container__description-mass {
+  width: 90px;
+  height: 24px;
+  background-color: #eaeaea;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    font-size: 20px;
-    line-height: 20px;
-    text-align: right;
+    bottom: -8px;
+    width: 116px;
+    height: 14px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
-    display: inline;
+    background-color: #eaeaea;
   }
 }
 
-.role-model-price-container__price-description {
+.role-model-date-container__description-time {
+  width: 93px;
+  height: 24px;
+  background-color: #eaeaea;
+  overflow: hidden;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 9px;
+    bottom: -8px;
+    width: 145px;
+    height: 14px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    background-color: #eaeaea;
   }
 }
