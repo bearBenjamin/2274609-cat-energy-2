@@ -68,3 +68,22 @@
   mask-position: center;
   mask-repeat: no-repeat;
 }
+
+.slider-container__toggle:hover,
+.slider-container__toggle:hover::after {
+  background-color: $basic-green;
+}
+
+.slider-container__toggle:hover::before {
+  border-color: $basic-green;
+}
+
+.slider-container__toggle:active,
+.slider-container__toggle:active::after {
+  background-color: $basic-green-2;
+  opacity: 0.6;
+}
+
+.slider-container__toggle:active::before {
+  border-color: $basic-green-2;
+}

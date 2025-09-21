@@ -33,11 +33,21 @@
 
 .page-footer__logo {
   grid-row: 1/1;
+  color: #111111;
 
   @media (min-width: $tablet-width) {
     grid-row: 1/1;
     grid-column: 2/2;
   }
+}
+
+.page-footer__logo:hover,
+.page-footer__logo:focus-visible {
+  color: #3e3e3e;
+}
+
+.page-footer__logo:active {
+  color: #6b6b6b;
 }
 
 .page-footer__container::before {
@@ -102,6 +112,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  color: $special-grey-2;
 
   @media (min-width: $tablet-width) {
     width: 163px;
@@ -122,4 +133,18 @@
   display: block;
   width: 27px;
   height: 34px;
+}
+
+.page-footer__developer-contact:hover .page-footer__logo-developer,
+.page-footer__developer-contact:focus-visible .page-footer__logo-developer {
+  color: $basic-green;
+}
+
+.page-footer__developer-contact:active .page-footer__name-developer {
+  opacity: 0.3;
+}
+
+.page-footer__developer-contact:active .page-footer__logo-developer {
+  color: $basic-green;
+  opacity: 0.3;
 }

@@ -11,6 +11,15 @@
   mask-position: bottom;
 }
 
+.footer-social-list-item__link:hover::before,
+.footer-social-list-item__link:focus-visible::before {
+  background-color: $basic-green;
+}
+
+.footer-social-list-item__link:active::before {
+  opacity: 0.3;
+}
+
 .footer-social-list-item__link--vk::before {
   content: "";
   display: block;

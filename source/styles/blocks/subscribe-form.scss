@@ -26,4 +26,8 @@
     padding: 15px 70px;
     width: 256px;
   }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

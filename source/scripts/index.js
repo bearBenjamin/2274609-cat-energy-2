@@ -1,9 +1,11 @@
 const mainNav = document.querySelector('.main-nav__list');
 const btnToggle = document.querySelector('.main-header__button');
 const btnToggleText = document.querySelector('.button-toggle__text');
+const frameMap = document.querySelector('.contact__map-yandex');
 
 mainNav.classList.remove('main-nav__list--nojs');
 btnToggle.classList.remove('main-header__button--nojs');
+frameMap.classList.remove('contact__map-yandex--nojs');
 
 btnToggle.addEventListener('click', () => {
   if (mainNav.classList.contains('main-nav__list--close')) {

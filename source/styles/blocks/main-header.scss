@@ -34,7 +34,7 @@
 
 .main-header__button {
   position: absolute;
-  top: 7px;
+  top: 0;
   right: 21px;
   background-image: url("../../icons/stack.svg#logo-button-open");
   background-size: 24px 24px;
@@ -58,14 +58,3 @@
     background-image: none;
   }
 }
-
-/* .main-header__hero {
-  // display: grid;
-  // justify-content: center;
-
-  //@media (min-width: $tablet-width) {}
-
-  @media (min-width: $desktop-width) {
-    margin-top: -114px;
-  }
-} */

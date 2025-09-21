@@ -17,7 +17,7 @@
 
 .main-nav__logo {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   column-gap: 56px;
 
   @media (min-width: $tablet-width) {
@@ -26,6 +26,14 @@
 
   @media (min-width: $desktop-width) {
     column-gap: 12px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -109,10 +117,11 @@
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
+    flex-flow: wrap row;
     margin-top: 0;
     margin-right: 3px;
     padding-top: 14px;
-    flex-direction: row;
+    //flex-direction: row;
     gap: 34px;
   }
 
@@ -211,4 +220,12 @@
   @media (min-width: $desktop-width) {
     color: #111111;
   }
+}
+
+.main-nav__list-link:hover {
+  opacity: 0.6;
+}
+
+.main-nav__list-link:active {
+  opacity: 0.3;
 }

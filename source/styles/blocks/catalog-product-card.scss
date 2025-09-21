@@ -55,7 +55,7 @@
   grid-column: 2/2;
   grid-row: 1/1;
   grid-template-columns: 1fr;
-  grid-template-rows: 37px 52px;
+  grid-template-rows: max-content max-content;
   gap: 19px;
 
   @media (min-width: $tablet-width) {
@@ -249,6 +249,7 @@
   padding: 10px 109px 10px 110px;
   grid-column: 1/-1;
   grid-row: 2/2;
+  overflow-wrap: break-word;
 
   @media (min-width: $tablet-width) {
     padding: 10px 94px 10px 95px;
@@ -256,6 +257,10 @@
 
   @media (min-width: $desktop-width) {
     padding: 10px 53px 10px 55px;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -272,5 +277,3 @@
     padding: 10px 40px 10px 39px;
   }
 }
-
-// .catalog-product-card__show {}
