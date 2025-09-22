@@ -75,6 +75,7 @@
   display: flex;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .contact__map-wrapper {
@@ -91,7 +92,7 @@
   height: 100%;
 }
 
-.contact__map-yandex {
+.contact__map-index {
   position: absolute;
   top: 0;
   left: 0;
@@ -102,9 +103,5 @@
   z-index: 1;
   border: 0;
   background-color: transparent;
-
-  &--nojs {
-    display: none;
-  }
 }
 

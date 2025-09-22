@@ -2,6 +2,7 @@
   padding-bottom: 40px;
   color: $basic-black;
   background-color: $basic-white;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 80px;
@@ -31,6 +32,11 @@
 
     @media (min-width: $tablet-width) {
       top: 14px;
+      left: -50vw;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 18px;
       left: -50vw;
     }
   }
