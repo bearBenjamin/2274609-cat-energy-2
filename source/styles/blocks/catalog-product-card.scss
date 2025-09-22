@@ -1,6 +1,6 @@
 .catalog-product-card {
-  padding-top: 21px;
-  padding-bottom: 25px;
+  padding-top: 19px;
+  padding-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     padding: 10px 37px 40px;
@@ -14,10 +14,10 @@
 .catalog-product-card--last {
   position: relative;
   display: grid;
-  padding-top: 25px;
+  padding-top: 27px;
   padding-bottom: 25px;
   grid-template-columns: 1fr;
-  gap: 12px;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     display: block;

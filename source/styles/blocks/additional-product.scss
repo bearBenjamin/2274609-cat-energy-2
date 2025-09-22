@@ -1,6 +1,7 @@
 .additional-product {
   color: $basic-black;
   background-color: $basic-white;
+  overflow: hidden;
 }
 
 .additional-product__wrapper {
@@ -27,6 +28,11 @@
 
     @media (min-width: $tablet-width) {
       top: 88px;
+      left: -50vw;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 89px;
       left: -50vw;
     }
   }
