@@ -17,7 +17,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 34px;
+    top: 35px;
     left: 0;
     right: 0;
     display: block;
@@ -42,7 +42,7 @@
   position: relative;
   width: fit-content;
   margin: 0;
-  padding-top: 24px;
+  padding-top: 25px;
   padding-right: 40px;
   padding-bottom: 37px;
   text-align: left;
@@ -72,8 +72,8 @@
   margin: 0;
   margin-bottom: 37px;
   padding: 0;
-  padding-top: 11px;
-  padding-bottom: 17px;
+  padding-top: 12px;
+  padding-bottom: 16px;
   list-style: none;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
@@ -135,7 +135,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: -14px;
+    top: -13px;
     left: 0;
     width: 100%;
     box-shadow: 0 0 0 1px #ebebeb;
