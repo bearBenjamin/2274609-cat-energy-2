@@ -121,7 +121,6 @@
     margin-top: 0;
     margin-right: 3px;
     padding-top: 14px;
-    //flex-direction: row;
     gap: 34px;
   }
 
@@ -228,4 +227,9 @@
 
 .main-nav__list-link:active {
   opacity: 0.3;
+}
+
+.main-nav__list-item .main-nav__list-link--current:hover {
+  cursor: default;
+  opacity: 1;
 }
