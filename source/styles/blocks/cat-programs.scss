@@ -235,25 +235,20 @@
 
   @media (min-width: $tablet-width) {
     top: 10px;
-    left: 132px;
+    left: 133px;
   }
 
   @media (min-width: $desktop-width) {
     bottom: 64px;
+    left: 132px;
   }
-}
-
-.cat-programs__item-link-slim:hover::after {
-  mask-image: url("../../icons/stack.svg#cat-program-arrow");
-  mask-position: left;
-  mask-size: 32px 12px;
 }
 
 .cat-programs__item-link-pro::after {
   content: "";
   position: absolute;
   top: 3px;
-  left: 97px;
+  left: 98px;
   width: 32px;
   height: 10px;
   background-color: $basic-black;
@@ -269,10 +264,11 @@
 
   @media (min-width: $desktop-width) {
     bottom: 64px;
-    left: 127px;
+    left: 128px;
   }
 }
 
+.cat-programs__item-link-slim:hover::after,
 .cat-programs__item-link-pro:hover::after {
   mask-image: url("../../icons/stack.svg#cat-program-arrow");
   mask-position: left;
